@@ -1,4 +1,6 @@
 package Amazon;
 
-public class MusicPage {
+import base.BasePage;
+
+public class MusicPage extends BasePage {
 }

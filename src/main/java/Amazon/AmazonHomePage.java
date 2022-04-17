@@ -1,4 +1,6 @@
 package Amazon;
 
-public class AmazonHomePage {
+import base.BasePage;
+
+public class AmazonHomePage extends BasePage {
 }

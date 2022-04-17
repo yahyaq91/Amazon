@@ -1,4 +1,6 @@
 package Amazon;
 
-public class AutomotivePage {
+import base.BasePage;
+
+public class AutomotivePage extends BasePage {
 }

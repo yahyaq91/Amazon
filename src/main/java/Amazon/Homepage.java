@@ -14,11 +14,25 @@ public class Homepage extends BasePage {
             "AmazonBasics&ref_=nav_cs_amazonbasics']")
     public WebElement amazonBasicsPage;
 
-    @FindBy(xpath = "//a[@href='/drag_and_drop']")
-    public WebElement dragDropButton;
+    @FindBy(xpath = "//a[@href='/home-garden-kitchen-furniture-bedding/b/?ie=UTF8&node=1055398&ref_=nav_cs_home']")
+    public WebElement amazonHomePage;
 
-    @FindBy(xpath = "//a[@href='/basic_auth']")
-    public WebElement basicAuthButton;
+    @FindBy(xpath = "//a[@href='/automotive-auto-truck-replacements-parts/b/?ie=UTF8&node=15684181&ref_=nav_cs_automotive']")
+    public WebElement automotivePage;
+
+    @FindBy(xpath = "//a[@href='/books-used-books-textbooks/b/?ie=UTF8&node=283155&ref_=nav_cs_books']")
+    public WebElement booksPage;
+
+    @FindBy(xpath = "//a[@href='/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=nav_cs_fashion']")
+    public WebElement fashionPage;
+
+    @FindBy(xpath = "//a[@href='/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc']")
+    public WebElement giftCardPage;
+
+    @FindBy(xpath = "//a[@href='/music/unlimited?ref_=nav_cs_music']")
+    public WebElement musicPage;
+
+
 
     public Homepage() {
         PageFactory.initElements(driver, this);
@@ -33,23 +47,35 @@ public class Homepage extends BasePage {
 
         return new AmazonBasicsPage();
     }
+    public AmazonHomePage navigateToAmazonHomePage() {
+        clickOnElement(amazonHomePage);
 
-//    public DropdownPage navigateToDropdownPage() {
-//        clickOnElement(dropdownButton);
-//
-//        return new DropdownPage();
-//    }
-//
-//    public DragDropPage navigateToDragDropPage() {
-//        clickOnElement(dragDropButton);
-//
-//        return new DragDropPage();
-//    }
-//
-//    public BasicAuthPage navigateToBasicAuthPage() {
-//        clickOnElement(basicAuthButton);
-//
-//        return new BasicAuthPage();
-//    }
+        return new AmazonHomePage();
+    }
+    public AutomotivePage navigateToAutomotivePage() {
+        clickOnElement(automotivePage);
+
+        return new AutomotivePage();
+    }
+    public BooksPage navigateToBooksPage() {
+        clickOnElement(booksPage);
+
+        return new BooksPage();
+    }
+    public FashionPage navigateToFashionPage() {
+        clickOnElement(fashionPage);
+
+        return new FashionPage();
+    }
+    public GiftCardPage navigateToGiftCardPage() {
+        clickOnElement(giftCardPage);
+
+        return new GiftCardPage();
+    }
+    public MusicPage navigateToMusicPage() {
+        clickOnElement(musicPage);
+
+        return new MusicPage();
+    }
 
 }

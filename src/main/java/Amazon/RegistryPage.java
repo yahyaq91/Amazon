@@ -6,11 +6,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class RegistryPage extends BasePage {
 
-//    private static final String URL = "https://www.amazon.com/registries?ref_=nav_cs_registry";
-//
-//    public RegistryPage() {
-//        webDriverWait.until(ExpectedConditions.urlToBe(URL));
-//        PageFactory.initElements(driver, this);
-//    }
+    private static final String URL = "https://www.amazon.com/";
+
+    public RegistryPage() {
+        webDriverWait.until(ExpectedConditions.urlContains(URL));
+        PageFactory.initElements(driver, this);
+    }
 
 }

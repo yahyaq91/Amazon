@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/AutomotivePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonHomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAutomotivePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestBooksPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestFashionPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestGiftCardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestMusicPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AutomotivePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AutomotivePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/BooksPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/BooksPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/FashionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/FashionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/GiftCardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/GiftCardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/MusicPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/MusicPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +44,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="27wAbXzGy7Cg2zPMXAICeYLGcYb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,11 +68,32 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Amazon" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestHomepage.testAccessToRegistryPage">
+    <configuration name="TestHomepage.testAccessToRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testAccessToRegistryPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestHomepage.testHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
@@ -75,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestHomepage.testAccessToRegistryPage" />
         <item itemvalue="TestNG.TestHomepage.testHomePage" />
       </list>
     </recent_temporary>

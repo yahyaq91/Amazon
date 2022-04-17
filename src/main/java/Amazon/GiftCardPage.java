@@ -1,4 +1,6 @@
 package Amazon;
 
-public class GiftCardPage {
+import base.BasePage;
+
+public class GiftCardPage extends BasePage {
 }

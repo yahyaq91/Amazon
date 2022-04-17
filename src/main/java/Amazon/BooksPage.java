@@ -1,4 +1,6 @@
 package Amazon;
 
-public class BooksPage {
+import base.BasePage;
+
+public class BooksPage extends BasePage {
 }
