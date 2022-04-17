@@ -44,6 +44,7 @@
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
 					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='exceptions-view' onclick="_updateCurrentStage(2)"><i class='mdi-action-bug-report'></i>Exceptions</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -54,7 +55,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2022-04-17 18:34:09</span>
+					<span class='suite-started-time'>2022-04-17 18:56:49</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -84,25 +85,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 9s+327ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 5s+890ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 9s+327ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 5s+890ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2022-04-17 18:34:00</span> 
+							<span class='panel-lead suite-started-time'>2022-04-17 18:56:43</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2022-04-17 18:34:09</span> 
+							<span class='panel-lead suite-ended-time'>2022-04-17 18:56:49</span> 
 						</div> 
 					</div>
 				</div>
@@ -273,17 +274,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='17d5a850-7a59-4288-a8e9-3ae8dbb6c271'>
+										<li class='collection-item test displayed active fail ' extentid='b5e8970e-2611-4779-a3f1-6ca28cfab141'>
 											<div class='test-head'>
-												<span class='test-name'>testAccessToRegistryPage </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='test-name'>testAccessToGiftCardPage </span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide  testhomepage'></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 18:34:06</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 18:34:09</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 2s+780ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 18:56:47</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 18:56:48</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 1s+227ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -302,9 +303,72 @@
 														</thead>
 														<tbody>
 																<tr>
-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>18:34:09</td>
-																	<td class='step-details'>TEST CASE PASSED: testAccessToRegistryPage</td>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>18:56:48</td>
+																	<td class='step-details'>TEST CASE FAILED: testAccessToGiftCardPage</td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>18:56:48</td>
+																	<td class='step-details'><textarea>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gift-cards/b/?ie=UTF8&amp;node=2238192011&amp;ref_=nav_cs_gc" class="nav-a  " tabindex="0" data-csa-c-type="link" data-csa-c-slot-id="nav_cs_14" data-csa-c-content-id="nav_cs_gc" data-csa-c-id="b7imh8-oqbe2m-5eql8-62h2fu">...</a> is not clickable at point (1315, 79). Other element would receive the click: <div class="nav-signin-tt nav-flyout" style="display: block; position: absolute; top: -5px; left: 1159.83px; opacity: 1;">...</div>
+  (Session info: MicrosoftEdge=100.0.1185.44)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'YAHYA', ip: '192.168.1.160', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [854d1beba42f2071cad9db6e569891bb, clickElement {id=478973bb-f207-4f0b-9cd2-e6b0d9054a3e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 100.0.1185.44, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:65520}, msedge: {msedgedriverVersion: 100.0.1185.44 (a485c16d1ab7..., userDataDir: C:\Users\yahya\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65520/devtoo..., se:cdpVersion: 100.0.1185.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (854d1beba42f2071cad9db6e569891bb)] -> xpath: //a[@href='/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc']]
+Session ID: 854d1beba42f2071cad9db6e569891bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at base.BasePage.clickOnElement(BasePage.java:97)
+	at Amazon.Homepage.navigateToGiftCardPage(Homepage.java:71)
+	at Amazon.TestHomepage.testAccessToGiftCardPage(TestHomepage.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</textarea></td>
 																</tr>
 														</tbody>
 													</table>
@@ -365,13 +429,13 @@
 													<span class='category-name'>TestHomepage</span>
 												</div>
 												<div class='category-status-counts'>
-														<span class='pass label dot'>Pass: 1</span>
+														<span class='fail label dot'>Fail: 1</span>
 												</div>
 												<div class='cat-body'>
 													<div class='category-status-counts'>
 														<div class='button-group'>
-															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
-															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>0</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>1</span></a>
 															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
 														</div>
 													</div>
@@ -385,10 +449,10 @@
 																</tr>
 															</thead>
 															<tbody>
-																	<tr class='pass'>
-																		<td>2022-04-17 18:34:06</td>
-																		<td><span class='category-link linked' extentid='17d5a850-7a59-4288-a8e9-3ae8dbb6c271'>testAccessToRegistryPage</span></td>
-																		<td><div class='status label capitalize pass'>pass</div></td>
+																	<tr class='fail'>
+																		<td>2022-04-17 18:56:47</td>
+																		<td><span class='category-link linked' extentid='b5e8970e-2611-4779-a3f1-6ca28cfab141'>testAccessToGiftCardPage</span></td>
+																		<td><div class='status label capitalize fail'>fail</div></td>
 																	</tr>
 															<tbody>
 														</table>
@@ -413,6 +477,126 @@
 			<!-- /categories -->
 			
 			<!-- exceptions -->
+				<div id='exceptions-view' class='row _addedTable hide'>
+					<div class='col _addedCell1'>
+						<div class='contents'>
+							<div class='card-panel heading'>
+								<h5>Defects</h5>
+							</div>
+							<div class='card-panel filters'>
+								<div class='search' alt='Search tests' title='Search tests'>
+									<div class='input-field left'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+									</div>
+									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
+										<i class='mdi-action-search'></i>
+									</a>
+								</div>
+							</div>
+							<div class='card-panel no-padding-h no-padding-v'>
+								<div class='wrapper'>
+									<ul id='exception-collection' class='exception-collection'>
+											<li class='exception-item displayed'>
+												<div class='exception-head'>
+													<span class='exception-name'>org.openqa.selenium.ElementClickInterceptedException</span>
+												</div>
+												<div class='exception-test-count'>
+													<span class='fail label'>1</span>
+												</div>
+												<div class='exception-body'>
+													<div class='exception-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Exception</th>
+																</tr>
+															</thead>
+															<tbody>
+                                                                   <tr class='fail'>
+                                                                       <td>2022-04-17 18:56:47</td>
+                                                                       <td><span class='exception-link linked' extentid='b5e8970e-2611-4779-a3f1-6ca28cfab141'>testAccessToGiftCardPage</span></td>
+                                                                       <td><pre class='exception-message'>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/gift-cards/b/?ie=UTF8&amp;node=2238192011&amp;ref_=nav_cs_gc" class="nav-a  " tabindex="0" data-csa-c-type="link" data-csa-c-slot-id="nav_cs_14" data-csa-c-content-id="nav_cs_gc" data-csa-c-id="b7imh8-oqbe2m-5eql8-62h2fu">...</a> is not clickable at point (1315, 79). Other element would receive the click: <div class="nav-signin-tt nav-flyout" style="display: block; position: absolute; top: -5px; left: 1159.83px; opacity: 1;">...</div>
+  (Session info: MicrosoftEdge=100.0.1185.44)
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'YAHYA', ip: '192.168.1.160', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.14'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [854d1beba42f2071cad9db6e569891bb, clickElement {id=478973bb-f207-4f0b-9cd2-e6b0d9054a3e}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 100.0.1185.44, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:65520}, msedge: {msedgedriverVersion: 100.0.1185.44 (a485c16d1ab7..., userDataDir: C:\Users\yahya\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65520/devtoo..., se:cdpVersion: 100.0.1185.44, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (854d1beba42f2071cad9db6e569891bb)] -> xpath: //a[@href='/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gc']]
+Session ID: 854d1beba42f2071cad9db6e569891bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy18.click(Unknown Source)
+	at base.BasePage.clickOnElement(BasePage.java:97)
+	at Amazon.Homepage.navigateToGiftCardPage(Homepage.java:71)
+	at Amazon.TestHomepage.testAccessToGiftCardPage(TestHomepage.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:66)
+	at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:109)
+</pre></td>
+                                                                   </tr>
+                                                            </tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='exception-details-wrapper' class='col _addedCell2'>
+						<div class='contents'>
+							<div class='card-panel details-view'>
+								<h5 class='exception-name'></h5>
+								<div class='exception-container'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			<!-- /exceptions -->
 			
 			<!-- testrunner logs -->

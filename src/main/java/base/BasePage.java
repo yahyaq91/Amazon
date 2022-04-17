@@ -5,6 +5,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.safari.SafariDriver;
@@ -52,7 +53,7 @@ public class BasePage {
 
     @Parameters({"browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("chrome") String browser, @Optional("https://www.amazon.com") String url) throws IOException {
+    public void driverSetup(@Optional("edge") String browser, @Optional("https://www.amazon.com") String url) throws IOException {
         driverInit(browser);
         driver.get(url);
         driver.manage().deleteAllCookies();
@@ -159,6 +160,9 @@ public class BasePage {
         } else if (browser.equalsIgnoreCase("safari")) {
             WebDriverManager.safaridriver().setup();
             driver = new SafariDriver();
+        } else if (browser.equalsIgnoreCase("edge")) {
+            WebDriverManager.edgedriver().setup();
+            driver = new EdgeDriver();
         }
 
         webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));

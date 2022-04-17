@@ -5,24 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAutomotivePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestBooksPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestFashionPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestGiftCardPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestMusicPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testAccessToAutomotivePage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AutomotivePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AutomotivePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/BooksPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/BooksPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/FashionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/FashionPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/GiftCardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/GiftCardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/MusicPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/MusicPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +62,8 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestHomepage.testAccessToRegistryPage">
-    <configuration name="TestHomepage.testAccessToRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestHomepage.testAccessToGiftCardPage">
+    <configuration name="TestHomepage.testAccessToAmazonBasicsPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +73,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
       <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
-      <option name="METHOD_NAME" value="testAccessToRegistryPage" />
+      <option name="METHOD_NAME" value="testAccessToAmazonBasicsPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -94,7 +81,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomepage.testHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHomepage.testAccessToAmazonHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +91,61 @@
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
       <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
-      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="METHOD_NAME" value="testAccessToAmazonHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomepage.testAccessToAutomotivePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testAccessToAutomotivePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomepage.testAccessToGiftCardPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testAccessToGiftCardPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomepage.testAccessToMusicPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testAccessToMusicPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -114,8 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestHomepage.testAccessToRegistryPage" />
-        <item itemvalue="TestNG.TestHomepage.testHomePage" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToGiftCardPage" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToMusicPage" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToAmazonHomePage" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToAmazonBasicsPage" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToAutomotivePage" />
       </list>
     </recent_temporary>
   </component>
