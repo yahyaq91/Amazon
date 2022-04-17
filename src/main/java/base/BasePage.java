@@ -52,7 +52,7 @@ public class BasePage {
 
     @Parameters({"browser", "url"})
     @BeforeMethod
-    public void driverSetup(@Optional("chrome") String browser, @Optional("http://www.amazon.com") String url) throws IOException {
+    public void driverSetup(@Optional("chrome") String browser, @Optional("https://www.amazon.com") String url) throws IOException {
         driverInit(browser);
         driver.get(url);
         driver.manage().deleteAllCookies();

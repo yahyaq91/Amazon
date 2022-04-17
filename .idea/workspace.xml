@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="" />
+    <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestBasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BasePage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TestNG Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -32,6 +41,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -41,6 +52,37 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yahya\IdeaProjects\Amazon\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Amazon" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="TestHomepage.testHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TestHomepage.testHomePage" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -52,5 +94,16 @@
       <updated>1650220850340</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
