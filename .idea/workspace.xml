@@ -70,6 +70,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="27wAbXzGy7Cg2zPMXAICeYLGcYb" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -104,7 +111,7 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption">
+  <component name="RunManager" selected="TestNG.TestRegistryPage.testCustomGiftListDropdownOption">
     <configuration name="TestRegistryPage.testBabyRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
@@ -197,11 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption" />
         <item itemvalue="TestNG.TestRegistryPage.testCustomGiftListDropdownOption" />
+        <item itemvalue="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption" />
+        <item itemvalue="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption" />
         <item itemvalue="TestNG.TestRegistryPage.testBabyRegistryDropdownOption" />
         <item itemvalue="TestNG.TestRegistryPage.testBirthdayGiftListDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption" />
       </list>
     </recent_temporary>
   </component>
