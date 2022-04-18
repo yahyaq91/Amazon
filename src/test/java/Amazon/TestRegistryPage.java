@@ -10,7 +10,7 @@ public class TestRegistryPage extends TestBasePage {
         Homepage homepage = new Homepage();
         RegistryPage registryPage = homepage.navigateToRegistryPage();
         selectFromDropdownByIndex(registryPage.dropdown, 1);
-        registryPage.searchBar.sendKeys("Alan");
+        registryPage.searchBar.sendKeys("Adam");
         registryPage.searchButton.click();
         registryPage.weddingRegistryFirstResult.click();
     }
