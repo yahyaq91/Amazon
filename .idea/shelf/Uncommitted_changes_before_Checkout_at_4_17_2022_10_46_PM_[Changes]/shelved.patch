@@ -1,0 +1,382 @@
+Index: src/test/reports/test_report.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n<!DOCTYPE html>\r\n<html>\r\n\t<head>\r\n\t\t<!--\r\n\t\t\tExtentReports Library 2.41.1 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/\r\n\t\t\tCopyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause\r\n\t\t\tDocumentation: http://extentreports.relevantcodes.com \r\n\t\t-->\r\n\r\n\t\t<meta charset='UTF-8' /> \r\n\t\t<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />\r\n\t\t<meta name='robots' content='noodp, noydir' />\r\n\t\t<meta name='viewport' content='width=device-width, initial-scale=1' />\r\n\t\t<meta name='extentx' id='extentx' content='' />\r\n\t\t\r\n\t\t<title>\r\n\t\t\t\tExtentReports 2.0\r\n\t\t</title>\r\n\t\t\r\n\t\t\r\n\t\t<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>\r\n\t\t<link href='https://cdn.rawgit.com/anshooarora/extentreports/6032d73243ba4fe4fb8769eb9c315d4fdf16fe68/cdn/extent.css' type='text/css' rel='stylesheet' />\r\n\t\t\r\n\t\t<style>\r\n\t\t\t\t\r\n            \r\n                \r\n            \r\n        \r\n\t\t</style>\r\n\t</head>\r\n\t\r\n\t\r\n\t<body class='extent default standard hide-overflow'>\r\n\t\t<!-- nav -->\r\n\t\t<nav>\r\n\t\t\t<div class='logo-container blue darken-2'>\r\n\t\t\t\t<a class='logo-content' href='http://extentreports.relevantcodes.com'>\r\n\t\t\t\t\t<span>ExtentReports</span>\r\n\t\t\t\t</a>\r\n\t\t\t\t<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>\r\n\t\t\t</div>\r\n\t\t\t<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>\r\n\t\t\t\t<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick=\"_updateCurrentStage(0)\"><i class='mdi-action-dashboard'></i>Test Details</a></li>\r\n\t\t\t\t\t<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick=\"_updateCurrentStage(1)\"><i class='mdi-maps-local-offer'></i>Categories</a></li>\r\n\t\t\t\t<li class='analysis waves-effect'>\r\n\t\t\t\t\t<a href='#!' onclick=\"_updateCurrentStage(-1)\" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n\t\t\t<span class='report-name'>Automation Report</span> <span class='report-headline'></span>\r\n\t\t\t<ul class='right hide-on-med-and-down nav-right'>\r\n\t\t\t\t<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $(\"body\").addClass(\"dark\");' title='Click to toggle dark theme. To enable by default, use js configuration $(\"body\").addClass(\"dark\");'>\r\n\t\t\t\t\t<i class='mdi-hardware-desktop-windows'></i>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<span class='suite-started-time'>2022-04-17 22:15:37</span>\r\n\t\t\t\t</li>\r\n\t\t\t\t<li>\r\n\t\t\t\t\t<span>v2.41.1</span>\r\n\t\t\t\t</li>\r\n\t\t\t</ul>\r\n\t\t</nav>\r\n\t\t<!-- /nav -->\r\n\t\t\r\n\t\t<!-- container -->\r\n\t\t<div class='container'>\r\n\t\t\t\r\n\t\t\t<!-- dashboard -->\r\n\t\t\t<div id='dashboard-view' class='row'>\r\n\t\t\t\t<div class='time-totals'>\r\n\t\t\t\t\t<div class='col l2 m4 s6'>\r\n\t\t\t\t\t\t<div class='card suite-total-tests'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>Total Tests</span> \r\n\t\t\t\t\t\t\t<span class='total-tests'> <span class='panel-lead'></span> </span> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='col l2 m4 s6'>\r\n\t\t\t\t\t\t<div class='card suite-total-steps'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>Total Steps</span> \r\n\t\t\t\t\t\t\t<span class='total-steps'> <span class='panel-lead'></span> </span> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='col l2 m4 s12'>\r\n\t\t\t\t\t\t<div class='card suite-total-time-current'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>Total Time Taken (Current Run)</span> \r\n\t\t\t\t\t\t\t<span class='suite-total-time-current-value panel-lead'>0h 0m 56s+557ms</span> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='col l2 m4 s12'>\r\n\t\t\t\t\t\t<div class='card suite-total-time-overall'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>Total Time Taken (Overall)</span> \r\n\t\t\t\t\t\t\t<span class='suite-total-time-overall-value panel-lead'>0h 0m 56s+557ms</span> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='col l2 m4 s6 suite-start-time'>\r\n\t\t\t\t\t\t<div class='card accent green-accent'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>Start</span> \r\n\t\t\t\t\t\t\t<span class='panel-lead suite-started-time'>2022-04-17 22:14:41</span> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='col l2 m4 s6 suite-end-time'>\r\n\t\t\t\t\t\t<div class='card accent pink-accent'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>End</span> \r\n\t\t\t\t\t\t\t<span class='panel-lead suite-ended-time'>2022-04-17 22:15:37</span> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class='charts'>\r\n\t\t\t\t\t<div class='col s12 m6 l4 fh'> \r\n\t\t\t\t\t\t<div class='card-panel'> \r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<span class='panel-name'>Tests View</span>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div class='panel-setting modal-trigger test-count-setting right'>\r\n\t\t\t\t\t\t\t\t<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div class='chart-box'>\r\n\t\t\t\t\t\t\t\t<canvas class='text-centered' id='test-analysis'></canvas>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div> \r\n\t\t\t\t\t<div class='col s12 m6 l4 fh'> \r\n\t\t\t\t\t\t<div class='card-panel'> \r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<span class='panel-name'>Steps View</span>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div class='panel-setting modal-trigger step-status-filter right'>\r\n\t\t\t\t\t\t\t\t<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div class='chart-box'>\r\n\t\t\t\t\t\t\t\t<canvas class='text-centered' id='step-analysis'></canvas>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>\r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div class='col s12 m12 l4 fh'> \r\n\t\t\t\t\t\t<div class='card-panel'> \r\n\t\t\t\t\t\t\t<span class='panel-name'>Pass Percentage</span> \r\n\t\t\t\t\t\t\t<span class='pass-percentage panel-lead'></span> \r\n\t\t\t\t\t\t\t<div class='progress light-blue lighten-3'> \r\n\t\t\t\t\t\t\t\t<div class='determinate light-blue'></div> \r\n\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t</div> \r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class='system-view'>\r\n\t\t\t\t\t<div class='col l4 m12 s12'>\r\n\t\t\t\t\t\t<div class='card-panel'>\r\n\t\t\t\t\t\t\t<span class='label info outline right'>Environment</span>\r\n\t\t\t\t\t\t\t<table>\r\n\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t<th>Param</th>\r\n\t\t\t\t\t\t\t\t\t\t<th>Value</th>\r\n\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>User Name</td>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>Sami Sheikh</td>\r\n\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>OS</td>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>Windows 11</td>\r\n\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>Java Version</td>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>11.0.14</td>\r\n\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>Host Name</td>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>Maximus</td>\r\n\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>Environment</td>\r\n\t\t\t\t\t\t\t\t\t\t\t<td>QA</td>\r\n\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t\t<div class='category-summary-view'>\r\n\t\t\t\t\t\t<div class='col l4 m6 s12'>\r\n\t\t\t\t\t\t\t<div class='card-panel'>\r\n\t\t\t\t\t\t\t\t<span class='label info outline right'>Categories</span>\r\n\t\t\t\t\t\t\t\t<table>\r\n\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<th>Name</th>\r\n\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\tTestRegistryPage\r\n\t\t\t\t\t\t\t\t\t\t\t\t</td>\r\n\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<!-- /dashboard -->\r\n\t\t\t\r\n\t\t\t<!-- tests -->\r\n\t\t\t<div id='test-view' class='row _addedTable'>\r\n\t\t\t\t<div class='col _addedCell1'>\r\n\t\t\t\t\t<div class='contents'>\r\n\t\t\t\t\t\t<div class='card-panel heading'>\r\n\t\t\t\t\t\t\t<h5>Tests</h5>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class='card-panel filters'>\r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>\r\n\t\t\t\t\t\t\t\t\t<i class='mdi-action-reorder'></i>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t<ul id='tests-toggle' class='dropdown-content'>\r\n\t\t\t\t\t\t\t\t\t<li class='pass'><a href='#!'>Pass</a></li>\r\n\t\t\t\t\t\t\t\t\t<li class='fail'><a href='#!'>Fail</a></li>\r\n\t\t\t\t\t\t\t\t\t<li class='skip'><a href='#!'>Skip</a></li>\r\n\t\t\t\t\t\t\t\t\t<li class='divider'></li>\r\n\t\t\t\t\t\t\t\t\t<li class='clear'><a href='#!'>Clear Filters</a></li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t\t<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>\r\n\t\t\t\t\t\t\t\t\t\t<i class='mdi-maps-local-offer'></i>\r\n\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t\t<ul id='category-toggle' class='dropdown-content'>\r\n\t\t\t\t\t\t\t\t\t\t\t<li class='TestRegistryPage'><a href='#!'>TestRegistryPage</a></li>\r\n\t\t\t\t\t\t\t\t\t\t<li class='divider'></li>\r\n\t\t\t\t\t\t\t\t\t\t<li class='clear'><a href='#!'>Clear Filters</a></li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>\r\n\t\t\t\t\t\t\t\t\t<i class='mdi-navigation-close'></i>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<a class='btn-floating btn-small waves-effect waves-light grey' id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'>\r\n\t\t\t\t\t\t\t\t\t<i class='mdi-action-track-changes'></i>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div>\r\n\t\t\t\t\t\t\t\t<a class='btn-floating btn-small waves-effect waves-light blue enabled' id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters'>\r\n\t\t\t\t\t\t\t\t\t<i class='mdi-navigation-refresh'></i>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class='search' alt='Search Tests' title='Search Tests'>\r\n\t\t\t\t\t\t\t\t<div class='input-field left'>\r\n\t\t\t\t\t\t\t\t\t<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t<a href=\"#\" class='btn-floating btn-small waves-effect waves-light grey'>\r\n\t\t\t\t\t\t\t\t\t<i class='mdi-action-search'></i>\r\n\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class='card-panel no-padding-h no-padding-v no-margin-v'>\r\n\t\t\t\t\t\t\t<div class='wrapper'>\r\n\t\t\t\t\t\t\t\t<ul id='test-collection' class='test-collection'>\r\n\t\t\t\t\t\t\t\t\t\t<li class='collection-item test displayed active pass ' extentid='6009c473-2784-43e0-aa72-687864c43942'>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-head'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-name'>testBabyRegistryDropdownOption </span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-status label right outline capitalize pass'>pass</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='category-assigned hide  testregistrypage'></span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-body'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-info'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:14:49</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:14:54</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+814ms</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-desc'></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-attributes'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='categories'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='category text-white'>TestRegistryPage</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-steps'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class='bordered table-results'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Status</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Timestamp</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Details</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='timestamp'>22:14:54</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='step-details'>TEST CASE PASSED: testBabyRegistryDropdownOption</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class='collapsible node-list' data-collapsible='accordion'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t\t<li class='collection-item test displayed active pass ' extentid='57137fca-dc5f-4d64-82ea-fd3b3030b25a'>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-head'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-name'>testBirthdayGiftListDropdownOption </span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-status label right outline capitalize pass'>pass</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='category-assigned hide  testregistrypage'></span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-body'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-info'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:01</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:06</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+98ms</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-desc'></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-attributes'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='categories'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='category text-white'>TestRegistryPage</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-steps'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class='bordered table-results'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Status</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Timestamp</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Details</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='timestamp'>22:15:06</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='step-details'>TEST CASE PASSED: testBirthdayGiftListDropdownOption</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class='collapsible node-list' data-collapsible='accordion'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t\t<li class='collection-item test displayed active pass ' extentid='00eb4091-84c8-45a6-bf2a-f328fd4e2865'>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-head'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-name'>testCustomGiftListDropdownOption </span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-status label right outline capitalize pass'>pass</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='category-assigned hide  testregistrypage'></span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-body'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-info'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:12</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:16</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+522ms</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-desc'></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-attributes'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='categories'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='category text-white'>TestRegistryPage</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-steps'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class='bordered table-results'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Status</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Timestamp</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Details</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='timestamp'>22:15:16</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='step-details'>TEST CASE PASSED: testCustomGiftListDropdownOption</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class='collapsible node-list' data-collapsible='accordion'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t\t<li class='collection-item test displayed active pass ' extentid='6b993276-8479-4724-a7f1-c3f70f0d32dd'>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-head'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-name'>testHolidayGiftListDropdownOption </span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-status label right outline capitalize pass'>pass</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='category-assigned hide  testregistrypage'></span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-body'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-info'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:23</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:26</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+888ms</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-desc'></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-attributes'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='categories'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='category text-white'>TestRegistryPage</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-steps'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class='bordered table-results'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Status</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Timestamp</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Details</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='timestamp'>22:15:26</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='step-details'>TEST CASE PASSED: testHolidayGiftListDropdownOption</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class='collapsible node-list' data-collapsible='accordion'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t\t<li class='collection-item test displayed active pass ' extentid='1eafb0b9-67bb-4633-8929-01070346014d'>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-head'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-name'>testWeddingRegistryDropdownOption </span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='test-status label right outline capitalize pass'>pass</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<span class='category-assigned hide  testregistrypage'></span>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t<div class='test-body'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-info'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:33</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:37</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+594ms</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-desc'></div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-attributes'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='categories'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='category text-white'>TestRegistryPage</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='test-steps'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<table class='bordered table-results'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Status</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Timestamp</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Details</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='timestamp'>22:15:37</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td class='step-details'>TEST CASE PASSED: testWeddingRegistryDropdownOption</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<ul class='collapsible node-list' data-collapsible='accordion'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div id='test-details-wrapper' class='col _addedCell2'>\r\n\t\t\t\t\t<div class='contents'>\r\n\t\t\t\t\t\t<div class='card-panel details-view'>\r\n\t\t\t\t\t\t\t<h5 class='details-name'></h5>\r\n\t\t\t\t\t\t\t<div class='step-filters right'>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light blue' status='info' alt='info' title='info'><i class='mdi-action-info-outline'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light green' status='pass' alt='pass' title='pass'><i class='mdi-action-check-circle'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light red' status='fail' alt='fail' title='fail'><i class='mdi-navigation-cancel'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light red darken-4' status='fatal' alt='fatal' title='fatal'><i class='mdi-navigation-cancel'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light red lighten-2' status='error' alt='error' title='error'><i class='mdi-alert-error'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light orange' alt='warning' status='warning' title='warning'><i class='mdi-alert-warning'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light cyan' status='skip' alt='skip' title='skip'><i class='mdi-content-redo'></i></span>\r\n\t\t\t\t\t\t\t\t<span class='btn-floating btn-small waves-effect waves-light grey darken-2' status='clear-step-filter' alt='Clear filters' title='Clear filters'><i class='mdi-content-clear'></i></span>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class='details-container'>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t\t<!-- /tests -->\r\n\t\t\t\r\n\t\t\t<!-- categories -->\r\n\t\t\t\t<div id='categories-view' class='row _addedTable hide'>\r\n\t\t\t\t\t<div class='col _addedCell1'>\r\n\t\t\t\t\t\t<div class='contents'>\r\n\t\t\t\t\t\t\t<div class='card-panel heading'>\r\n\t\t\t\t\t\t\t\t<h5>Categories</h5>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class='card-panel filters'>\r\n\t\t\t\t\t\t\t\t<div class='search' alt='Search tests' title='Search tests'>\r\n\t\t\t\t\t\t\t\t\t<div class='input-field left'>\r\n\t\t\t\t\t\t\t\t\t\t<input id='searchTests' type='text' class='validate' placeholder='Search...'>\r\n\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t<a href=\"#\" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>\r\n\t\t\t\t\t\t\t\t\t\t<i class='mdi-action-search'></i>\r\n\t\t\t\t\t\t\t\t\t</a>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class='card-panel no-padding-h no-padding-v'>\r\n\t\t\t\t\t\t\t\t<div class='wrapper'>\r\n\t\t\t\t\t\t\t\t\t<ul id='cat-collection' class='cat-collection'>\r\n\t\t\t\t\t\t\t\t\t\t\t<li class='category-item displayed'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='cat-head'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='category-name'>TestRegistryPage</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='category-status-counts'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<span class='pass label dot'>Pass: 5</span>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t<div class='cat-body'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='category-status-counts'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='button-group'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href='#!' class='pass label filter'>Pass <span class='icon'>5</span></a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t<div class='cat-tests'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<table class='bordered'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>RunDate</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Test Name</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<th>Status</th>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</thead>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr class='pass'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>2022-04-17 22:14:49</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><span class='category-link linked' extentid='6009c473-2784-43e0-aa72-687864c43942'>testBabyRegistryDropdownOption</span></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div class='status label capitalize pass'>pass</div></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr class='pass'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>2022-04-17 22:15:01</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><span class='category-link linked' extentid='57137fca-dc5f-4d64-82ea-fd3b3030b25a'>testBirthdayGiftListDropdownOption</span></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div class='status label capitalize pass'>pass</div></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr class='pass'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>2022-04-17 22:15:12</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><span class='category-link linked' extentid='00eb4091-84c8-45a6-bf2a-f328fd4e2865'>testCustomGiftListDropdownOption</span></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div class='status label capitalize pass'>pass</div></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr class='pass'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>2022-04-17 22:15:23</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><span class='category-link linked' extentid='6b993276-8479-4724-a7f1-c3f70f0d32dd'>testHolidayGiftListDropdownOption</span></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div class='status label capitalize pass'>pass</div></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tr class='pass'>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td>2022-04-17 22:15:33</td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><span class='category-link linked' extentid='1eafb0b9-67bb-4633-8929-01070346014d'>testWeddingRegistryDropdownOption</span></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<td><div class='status label capitalize pass'>pass</div></td>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t</tr>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<tbody>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t</table>\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t\t\t\t\t\t</div> \r\n\t\t\t\t\t\t\t\t\t\t\t</li>\r\n\t\t\t\t\t\t\t\t\t</ul>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t\t<div id='cat-details-wrapper' class='col _addedCell2'>\r\n\t\t\t\t\t\t<div class='contents'>\r\n\t\t\t\t\t\t\t<div class='card-panel details-view'>\r\n\t\t\t\t\t\t\t\t<h5 class='cat-name'></h5>\r\n\t\t\t\t\t\t\t\t<div class='cat-container'>\r\n\t\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t<!-- /categories -->\r\n\t\t\t\r\n\t\t\t<!-- exceptions -->\r\n\t\t\t<!-- /exceptions -->\r\n\t\t\t\r\n\t\t\t<!-- testrunner logs -->\r\n\t\t\t<!-- /testrunner logs -->\r\n\t\t\t\r\n\t\t</div>\r\n\t\t<!-- /container -->\r\n\t\t\r\n\t\t<!-- test dashboard counts setting -->\r\n\t\t<div id='test-count-setting' class='modal bottom-sheet'> \r\n\t\t\t<div class='modal-content'> \r\n\t\t\t\t<h5>Configure Tests Count Setting</h5> \r\n\t\t\t\t<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> \r\n\t\t\t\t<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> \r\n\t\t\t\t<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> \r\n\t\t\t\t<label for='childNodes'>Child Tests Only</label> \r\n\t\t\t</div> \r\n\t\t\t<div class='modal-footer'> \r\n\t\t\t\t<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> \r\n\t\t\t</div> \r\n\t\t</div>\r\n\t\t<!-- /test dashboard counts setting -->\r\n\t\t\r\n\t\t<!-- filter for step status -->\r\n\t\t<div id='step-status-filter' class='modal bottom-sheet'> \r\n\t\t\t<div class='modal-content'> \r\n\t\t\t\t<h5>Select status</h5> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> \r\n\t\t\t\t<label for='step-dashboard-filter-pass'>Pass</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> \r\n\t\t\t\t<label for='step-dashboard-filter-fail'>Fail</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> \r\n\t\t\t\t<label for='step-dashboard-filter-fatal'>Fatal</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> \r\n\t\t\t\t<label for='step-dashboard-filter-error'>Error</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> \r\n\t\t\t\t<label for='step-dashboard-filter-warning'>Warning</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> \r\n\t\t\t\t<label for='step-dashboard-filter-skip'>Skipped</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> \r\n\t\t\t\t<label for='step-dashboard-filter-info'>Info</label> \r\n\t\t\t\t<br> \r\n\t\t\t\t<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> \r\n\t\t\t\t<label for='step-dashboard-filter-unknown'>Unknown</label> \r\n\t\t\t</div>\r\n\t\t\t<div class='modal-footer'> \r\n\t\t\t\t<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> \r\n\t\t\t</div> \r\n\t\t</div>\r\n\t\t<!-- /filter for step status -->\r\n\t\t\r\n\t\t<script src='https://cdn.rawgit.com/anshooarora/extentreports/6032d73243ba4fe4fb8769eb9c315d4fdf16fe68/cdn/extent.js' type='text/javascript'></script>\r\n\r\n\t\t<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>\r\n\t\t<script>\r\n\t\t\t\t\r\n            \r\n                $(document).ready(function() {\r\n                    \r\n                });\r\n            \r\n        \r\n\t\t</script>\r\n\t</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/reports/test_report.html b/src/test/reports/test_report.html
+--- a/src/test/reports/test_report.html	(revision 6e91bb726e0043396b3562b1c0a2bf95af374bc8)
++++ b/src/test/reports/test_report.html	(date 1650249356751)
+@@ -54,7 +54,7 @@
+ 					<i class='mdi-hardware-desktop-windows'></i>
+ 				</li>
+ 				<li>
+-					<span class='suite-started-time'>2022-04-17 22:15:37</span>
++					<span class='suite-started-time'>2022-04-17 22:35:56</span>
+ 				</li>
+ 				<li>
+ 					<span>v2.41.1</span>
+@@ -84,25 +84,25 @@
+ 					<div class='col l2 m4 s12'>
+ 						<div class='card suite-total-time-current'> 
+ 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
+-							<span class='suite-total-time-current-value panel-lead'>0h 0m 56s+557ms</span> 
++							<span class='suite-total-time-current-value panel-lead'>0h 0m 12s+841ms</span> 
+ 						</div> 
+ 					</div>
+ 					<div class='col l2 m4 s12'>
+ 						<div class='card suite-total-time-overall'> 
+ 							<span class='panel-name'>Total Time Taken (Overall)</span> 
+-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 56s+557ms</span> 
++							<span class='suite-total-time-overall-value panel-lead'>0h 0m 12s+841ms</span> 
+ 						</div> 
+ 					</div>
+ 					<div class='col l2 m4 s6 suite-start-time'>
+ 						<div class='card accent green-accent'> 
+ 							<span class='panel-name'>Start</span> 
+-							<span class='panel-lead suite-started-time'>2022-04-17 22:14:41</span> 
++							<span class='panel-lead suite-started-time'>2022-04-17 22:35:43</span> 
+ 						</div> 
+ 					</div>
+ 					<div class='col l2 m4 s6 suite-end-time'>
+ 						<div class='card accent pink-accent'> 
+ 							<span class='panel-name'>End</span> 
+-							<span class='panel-lead suite-ended-time'>2022-04-17 22:15:37</span> 
++							<span class='panel-lead suite-ended-time'>2022-04-17 22:35:56</span> 
+ 						</div> 
+ 					</div>
+ 				</div>
+@@ -273,167 +273,7 @@
+ 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
+ 							<div class='wrapper'>
+ 								<ul id='test-collection' class='test-collection'>
+-										<li class='collection-item test displayed active pass ' extentid='6009c473-2784-43e0-aa72-687864c43942'>
+-											<div class='test-head'>
+-												<span class='test-name'>testBabyRegistryDropdownOption </span>
+-												<span class='test-status label right outline capitalize pass'>pass</span>
+-												<span class='category-assigned hide  testregistrypage'></span>
+-											</div>
+-											<div class='test-body'>
+-												<div class='test-info'>
+-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:14:49</span>
+-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:14:54</span>
+-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+814ms</span>
+-												</div>
+-												<div class='test-desc'></div>
+-												<div class='test-attributes'>
+-														<div class='categories'>
+-																<span class='category text-white'>TestRegistryPage</span>
+-														</div>
+-												</div>
+-												<div class='test-steps'>
+-													<table class='bordered table-results'>
+-														<thead>
+-															<tr>
+-																<th>Status</th>
+-																<th>Timestamp</th>
+-																<th>Details</th>
+-															</tr>
+-														</thead>
+-														<tbody>
+-																<tr>
+-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+-																	<td class='timestamp'>22:14:54</td>
+-																	<td class='step-details'>TEST CASE PASSED: testBabyRegistryDropdownOption</td>
+-																</tr>
+-														</tbody>
+-													</table>
+-													<ul class='collapsible node-list' data-collapsible='accordion'>
+-													</ul>
+-												</div>
+-											</div>
+-										</li>
+-										<li class='collection-item test displayed active pass ' extentid='57137fca-dc5f-4d64-82ea-fd3b3030b25a'>
+-											<div class='test-head'>
+-												<span class='test-name'>testBirthdayGiftListDropdownOption </span>
+-												<span class='test-status label right outline capitalize pass'>pass</span>
+-												<span class='category-assigned hide  testregistrypage'></span>
+-											</div>
+-											<div class='test-body'>
+-												<div class='test-info'>
+-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:01</span>
+-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:06</span>
+-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+98ms</span>
+-												</div>
+-												<div class='test-desc'></div>
+-												<div class='test-attributes'>
+-														<div class='categories'>
+-																<span class='category text-white'>TestRegistryPage</span>
+-														</div>
+-												</div>
+-												<div class='test-steps'>
+-													<table class='bordered table-results'>
+-														<thead>
+-															<tr>
+-																<th>Status</th>
+-																<th>Timestamp</th>
+-																<th>Details</th>
+-															</tr>
+-														</thead>
+-														<tbody>
+-																<tr>
+-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+-																	<td class='timestamp'>22:15:06</td>
+-																	<td class='step-details'>TEST CASE PASSED: testBirthdayGiftListDropdownOption</td>
+-																</tr>
+-														</tbody>
+-													</table>
+-													<ul class='collapsible node-list' data-collapsible='accordion'>
+-													</ul>
+-												</div>
+-											</div>
+-										</li>
+-										<li class='collection-item test displayed active pass ' extentid='00eb4091-84c8-45a6-bf2a-f328fd4e2865'>
+-											<div class='test-head'>
+-												<span class='test-name'>testCustomGiftListDropdownOption </span>
+-												<span class='test-status label right outline capitalize pass'>pass</span>
+-												<span class='category-assigned hide  testregistrypage'></span>
+-											</div>
+-											<div class='test-body'>
+-												<div class='test-info'>
+-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:12</span>
+-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:16</span>
+-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+522ms</span>
+-												</div>
+-												<div class='test-desc'></div>
+-												<div class='test-attributes'>
+-														<div class='categories'>
+-																<span class='category text-white'>TestRegistryPage</span>
+-														</div>
+-												</div>
+-												<div class='test-steps'>
+-													<table class='bordered table-results'>
+-														<thead>
+-															<tr>
+-																<th>Status</th>
+-																<th>Timestamp</th>
+-																<th>Details</th>
+-															</tr>
+-														</thead>
+-														<tbody>
+-																<tr>
+-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+-																	<td class='timestamp'>22:15:16</td>
+-																	<td class='step-details'>TEST CASE PASSED: testCustomGiftListDropdownOption</td>
+-																</tr>
+-														</tbody>
+-													</table>
+-													<ul class='collapsible node-list' data-collapsible='accordion'>
+-													</ul>
+-												</div>
+-											</div>
+-										</li>
+-										<li class='collection-item test displayed active pass ' extentid='6b993276-8479-4724-a7f1-c3f70f0d32dd'>
+-											<div class='test-head'>
+-												<span class='test-name'>testHolidayGiftListDropdownOption </span>
+-												<span class='test-status label right outline capitalize pass'>pass</span>
+-												<span class='category-assigned hide  testregistrypage'></span>
+-											</div>
+-											<div class='test-body'>
+-												<div class='test-info'>
+-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:23</span>
+-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:26</span>
+-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 3s+888ms</span>
+-												</div>
+-												<div class='test-desc'></div>
+-												<div class='test-attributes'>
+-														<div class='categories'>
+-																<span class='category text-white'>TestRegistryPage</span>
+-														</div>
+-												</div>
+-												<div class='test-steps'>
+-													<table class='bordered table-results'>
+-														<thead>
+-															<tr>
+-																<th>Status</th>
+-																<th>Timestamp</th>
+-																<th>Details</th>
+-															</tr>
+-														</thead>
+-														<tbody>
+-																<tr>
+-																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+-																	<td class='timestamp'>22:15:26</td>
+-																	<td class='step-details'>TEST CASE PASSED: testHolidayGiftListDropdownOption</td>
+-																</tr>
+-														</tbody>
+-													</table>
+-													<ul class='collapsible node-list' data-collapsible='accordion'>
+-													</ul>
+-												</div>
+-											</div>
+-										</li>
+-										<li class='collection-item test displayed active pass ' extentid='1eafb0b9-67bb-4633-8929-01070346014d'>
++										<li class='collection-item test displayed active pass ' extentid='07c184c5-e89a-46d5-85d3-045ae1232058'>
+ 											<div class='test-head'>
+ 												<span class='test-name'>testWeddingRegistryDropdownOption </span>
+ 												<span class='test-status label right outline capitalize pass'>pass</span>
+@@ -441,9 +281,9 @@
+ 											</div>
+ 											<div class='test-body'>
+ 												<div class='test-info'>
+-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:15:33</span>
+-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:15:37</span>
+-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+594ms</span>
++													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2022-04-17 22:35:51</span>
++													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2022-04-17 22:35:55</span>
++													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+155ms</span>
+ 												</div>
+ 												<div class='test-desc'></div>
+ 												<div class='test-attributes'>
+@@ -463,7 +303,7 @@
+ 														<tbody>
+ 																<tr>
+ 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+-																	<td class='timestamp'>22:15:37</td>
++																	<td class='timestamp'>22:35:55</td>
+ 																	<td class='step-details'>TEST CASE PASSED: testWeddingRegistryDropdownOption</td>
+ 																</tr>
+ 														</tbody>
+@@ -525,12 +365,12 @@
+ 													<span class='category-name'>TestRegistryPage</span>
+ 												</div>
+ 												<div class='category-status-counts'>
+-														<span class='pass label dot'>Pass: 5</span>
++														<span class='pass label dot'>Pass: 1</span>
+ 												</div>
+ 												<div class='cat-body'>
+ 													<div class='category-status-counts'>
+ 														<div class='button-group'>
+-															<a href='#!' class='pass label filter'>Pass <span class='icon'>5</span></a>
++															<a href='#!' class='pass label filter'>Pass <span class='icon'>1</span></a>
+ 															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+ 															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+ 														</div>
+@@ -546,28 +386,8 @@
+ 															</thead>
+ 															<tbody>
+ 																	<tr class='pass'>
+-																		<td>2022-04-17 22:14:49</td>
+-																		<td><span class='category-link linked' extentid='6009c473-2784-43e0-aa72-687864c43942'>testBabyRegistryDropdownOption</span></td>
+-																		<td><div class='status label capitalize pass'>pass</div></td>
+-																	</tr>
+-																	<tr class='pass'>
+-																		<td>2022-04-17 22:15:01</td>
+-																		<td><span class='category-link linked' extentid='57137fca-dc5f-4d64-82ea-fd3b3030b25a'>testBirthdayGiftListDropdownOption</span></td>
+-																		<td><div class='status label capitalize pass'>pass</div></td>
+-																	</tr>
+-																	<tr class='pass'>
+-																		<td>2022-04-17 22:15:12</td>
+-																		<td><span class='category-link linked' extentid='00eb4091-84c8-45a6-bf2a-f328fd4e2865'>testCustomGiftListDropdownOption</span></td>
+-																		<td><div class='status label capitalize pass'>pass</div></td>
+-																	</tr>
+-																	<tr class='pass'>
+-																		<td>2022-04-17 22:15:23</td>
+-																		<td><span class='category-link linked' extentid='6b993276-8479-4724-a7f1-c3f70f0d32dd'>testHolidayGiftListDropdownOption</span></td>
+-																		<td><div class='status label capitalize pass'>pass</div></td>
+-																	</tr>
+-																	<tr class='pass'>
+-																		<td>2022-04-17 22:15:33</td>
+-																		<td><span class='category-link linked' extentid='1eafb0b9-67bb-4633-8929-01070346014d'>testWeddingRegistryDropdownOption</span></td>
++																		<td>2022-04-17 22:35:51</td>
++																		<td><span class='category-link linked' extentid='07c184c5-e89a-46d5-85d3-045ae1232058'>testWeddingRegistryDropdownOption</span></td>
+ 																		<td><div class='status label capitalize pass'>pass</div></td>
+ 																	</tr>
+ 															<tbody>
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e7ac956a-3680-457c-83a8-7ee5ce57ab4d\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/reports/testSelectFromDropdown.png\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/reports/testSelectFromDropdown.png\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/reports/test_report.html\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/reports/test_report.html\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"TestNG Test Class\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"27wAbXzGy7Cg2zPMXAICeYLGcYb\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\" value=\"TestNG\" />\r\n    <property name=\"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG\" value=\"\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../WWSelenium2022\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\yahya\\IdeaProjects\\Amazon\\src\\main\\java\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.Recents.Supers\">\r\n      <recent name=\"\" />\r\n    </key>\r\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\r\n      <recent name=\"Amazon\" />\r\n    </key>\r\n    <key name=\"CreateTestDialog.RecentsKey\">\r\n      <recent name=\"Amazon\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"TestNG.TestRegistryPage\">\r\n    <configuration name=\"TestHomepage.testAccessToGiftCardPage\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Amazon\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestHomepage\" />\r\n      <option name=\"METHOD_NAME\" value=\"testAccessToGiftCardPage\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRegistryPage\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Amazon\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRegistryPage.testCustomGiftListDropdownOption\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Amazon\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\r\n      <option name=\"METHOD_NAME\" value=\"testCustomGiftListDropdownOption\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRegistryPage.testHolidayGiftListDropdownOption\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Amazon\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\r\n      <option name=\"METHOD_NAME\" value=\"testHolidayGiftListDropdownOption\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestRegistryPage.testSelectFromDropdown\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Amazon\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\r\n      <option name=\"METHOD_NAME\" value=\"testSelectFromDropdown\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.TestRegistryPage\" />\r\n        <item itemvalue=\"TestNG.TestRegistryPage.testHolidayGiftListDropdownOption\" />\r\n        <item itemvalue=\"TestNG.TestRegistryPage.testCustomGiftListDropdownOption\" />\r\n        <item itemvalue=\"TestNG.TestRegistryPage.testSelectFromDropdown\" />\r\n        <item itemvalue=\"TestNG.TestHomepage.testAccessToGiftCardPage\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e7ac956a-3680-457c-83a8-7ee5ce57ab4d\" name=\"Changes\" comment=\"\" />\r\n      <created>1650220850340</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1650220850340</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 6e91bb726e0043396b3562b1c0a2bf95af374bc8)
++++ b/.idea/workspace.xml	(date 1650249394980)
+@@ -6,11 +6,9 @@
+   <component name="ChangeListManager">
+     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/reports/testSelectFromDropdown.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/testSelectFromDropdown.png" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -69,8 +67,8 @@
+       <recent name="Amazon" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.TestRegistryPage">
+-    <configuration name="TestHomepage.testAccessToGiftCardPage" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption">
++    <configuration name="TestRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Amazon" />
+       <extension name="coverage">
+         <pattern>
+@@ -79,16 +77,15 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Amazon" />
+-      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+-      <option name="METHOD_NAME" value="testAccessToGiftCardPage" />
+-      <option name="TEST_OBJECT" value="METHOD" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
++      <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestRegistryPage.testBabyRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Amazon" />
+       <extension name="coverage">
+         <pattern>
+@@ -98,7 +95,8 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="Amazon" />
+       <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="TEST_OBJECT" value="CLASS" />
++      <option name="METHOD_NAME" value="testBabyRegistryDropdownOption" />
++      <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+       <method v="2">
+@@ -141,7 +139,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestRegistryPage.testSelectFromDropdown" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestRegistryPage.testWeddingRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Amazon" />
+       <extension name="coverage">
+         <pattern>
+@@ -151,7 +149,7 @@
+       </extension>
+       <option name="PACKAGE_NAME" value="Amazon" />
+       <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="METHOD_NAME" value="testSelectFromDropdown" />
++      <option name="METHOD_NAME" value="testWeddingRegistryDropdownOption" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -161,11 +159,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption" />
++        <item itemvalue="TestNG.TestRegistryPage.testBabyRegistryDropdownOption" />
+         <item itemvalue="TestNG.TestRegistryPage" />
+         <item itemvalue="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption" />
+         <item itemvalue="TestNG.TestRegistryPage.testCustomGiftListDropdownOption" />
+-        <item itemvalue="TestNG.TestRegistryPage.testSelectFromDropdown" />
+-        <item itemvalue="TestNG.TestHomepage.testAccessToGiftCardPage" />
+       </list>
+     </recent_temporary>
+   </component>
