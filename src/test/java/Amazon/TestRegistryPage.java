@@ -64,17 +64,17 @@ public class TestRegistryPage extends TestBasePage {
         selectFromDropdownByIndex(registryPage.dropdown, 4);
         registryPage.searchBar.sendKeys("John");
         registryPage.searchButton.click();
-//        registryPage.customGiftListFirstResult.click();
+        registryPage.customGiftListFirstResult.click();
 
-        String expectedText = "Registrant name";
-        String text = driver.findElement(By.xpath("//div[@class='gr-search-registry-name-header " +
-                "gr-search-registry-detect-mode']")).getText();
-        System.out.println(text);
-        Assert.assertEquals(expectedText, text);
+//        String expectedText = "Registrant name";
+//        String text = driver.findElement(By.xpath("//div[@class='gr-search-registry-name-header " +
+//                "gr-search-registry-detect-mode']")).getText();
+//        System.out.println(text);
+//        Assert.assertEquals(expectedText, text);
 
-//        String greetingHeader = driver.getTitle();
-//        String expectedHeader = "Amazon Custom Gift List";
-//        Assert.assertEquals(greetingHeader, expectedHeader);
+        String greetingHeader = driver.getTitle();
+        String expectedHeader = "Amazon Custom Gift List";
+        Assert.assertEquals(greetingHeader, expectedHeader);
     }
     @Test
     public void testHolidayGiftListDropdownOption() {
@@ -83,17 +83,17 @@ public class TestRegistryPage extends TestBasePage {
         selectFromDropdownByIndex(registryPage.dropdown, 5);
         registryPage.searchBar.sendKeys("Peter");
         registryPage.searchButton.click();
-//        registryPage.holidayRegistryFirstResult.click();
+        registryPage.holidayRegistryFirstResult.click();
 
-        String expectedText = "Location";
-        String text = driver.findElement(By.xpath("//div[@class='gr-search-registry-event-location-header " +
-                "gr-search-registry-detect-mode']")).getText();
-        System.out.println(text);
-        Assert.assertEquals(expectedText, text);
+//        String expectedText = "Location";
+//        String text = driver.findElement(By.xpath("//div[@class='gr-search-registry-event-location-header " +
+//                "gr-search-registry-detect-mode']")).getText();
+//        System.out.println(text);
+//        Assert.assertEquals(expectedText, text);
 
-//        String greetingHeader = driver.getTitle();
-//        String expectedHeader = "Amazon Holiday Gift List";
-//        Assert.assertEquals(greetingHeader, expectedHeader);
+        String greetingHeader = driver.getTitle();
+        String expectedHeader = "Amazon Holiday Gift List";
+        Assert.assertEquals(greetingHeader, expectedHeader);
     }
 
 }
