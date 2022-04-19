@@ -5,17 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/KindleBooksPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestKindleBooksPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/AllOptionsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAllOptionsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testLearnAboutFireTv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testNavigateToCheeseInAmazonFresh.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/reports/testAccessToGiftCardPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/testAccessToGiftCardPage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +102,8 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestKindleBooksPage.testKindleUnlimitedEligibleOption">
-    <configuration name="TestHomepage.testAccessToGiftCardPage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestAllOptionsPage.testNavigateToCheeseInAmazonFresh">
+    <configuration name="TestAllOptionsPage.testFindDirectorInPrimeVideoPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -113,8 +112,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
-      <option name="METHOD_NAME" value="testAccessToGiftCardPage" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testFindDirectorInPrimeVideoPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -122,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestKindleBooksPage.testAvgCustomerReviews" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAllOptionsPage.testFireTvSupport" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -131,8 +130,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
-      <option name="METHOD_NAME" value="testAvgCustomerReviews" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testFireTvSupport" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -140,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestKindleBooksPage.testKindleBooksSearchBar" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAllOptionsPage.testLearnAboutFireTv" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -149,8 +148,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
-      <option name="METHOD_NAME" value="testKindleBooksSearchBar" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testLearnAboutFireTv" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,7 +157,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestKindleBooksPage.testKindleUnlimitedEligibleOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAllOptionsPage.testNavigateToCheeseInAmazonFresh" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -167,8 +166,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
-      <option name="METHOD_NAME" value="testKindleUnlimitedEligibleOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testNavigateToCheeseInAmazonFresh" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -176,7 +175,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestKindleBooksPage.testNewReleaseLast30Days" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestAllOptionsPage.testNavigateToCustomerReviewsForEchoShow5" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +184,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
-      <option name="METHOD_NAME" value="testNewReleaseLast30Days" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testNavigateToCustomerReviewsForEchoShow5" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -196,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestKindleBooksPage.testKindleUnlimitedEligibleOption" />
-        <item itemvalue="TestNG.TestKindleBooksPage.testKindleBooksSearchBar" />
-        <item itemvalue="TestNG.TestKindleBooksPage.testNewReleaseLast30Days" />
-        <item itemvalue="TestNG.TestKindleBooksPage.testAvgCustomerReviews" />
-        <item itemvalue="TestNG.TestHomepage.testAccessToGiftCardPage" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testNavigateToCheeseInAmazonFresh" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testNavigateToCustomerReviewsForEchoShow5" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testFireTvSupport" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testLearnAboutFireTv" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testFindDirectorInPrimeVideoPage" />
       </list>
     </recent_temporary>
   </component>

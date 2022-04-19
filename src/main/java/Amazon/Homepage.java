@@ -35,6 +35,9 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//a[@href = '/Kindle-eBooks/b/?ie=UTF8&node=154606011&ref_=nav_cs_kindle_books']")
     public WebElement kindleBooksPage;
 
+    @FindBy(xpath = "//a[@href='javascript: void(0)']")
+    public WebElement allOptionPage;
+
 
 
     public Homepage() {
@@ -84,6 +87,11 @@ public class Homepage extends BasePage {
         clickOnElement(kindleBooksPage);
 
         return new KindleBooksPage();
+    }
+    public AllOptionsPage selectAllOption() {
+        clickOnElement(allOptionPage);
+
+        return new AllOptionsPage();
     }
 
 }
