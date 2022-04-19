@@ -35,6 +35,9 @@ public class RegistryPage extends BasePage {
     @FindBy(name = "name")
     public WebElement searchBar;
 
+    @FindBy(xpath = "//a[@href = '/registries/birthday?ref_=gr-landing']")
+    public WebElement kidsBirthdays;
+
     @FindBy(xpath = "//*[@id=\"wr_search_result_record_0-owner\"]/div/a")
     public WebElement weddingRegistryFirstResult;
 

@@ -95,5 +95,16 @@ public class TestRegistryPage extends TestBasePage {
         String expectedHeader = "Amazon Holiday Gift List";
         Assert.assertEquals(greetingHeader, expectedHeader);
     }
+    @Test
+    public void testKidsBirthdaysButton(){
+        Homepage homepage = new Homepage();
+        RegistryPage registryPage = homepage.navigateToRegistryPage();
+        registryPage.kidsBirthdays.click();
+
+        String expectedText = "Featured Birthday Collections";
+        String text = driver.findElement(By.xpath("//div[@class = 'gr-header gr-header--lg']")).getText();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
+    }
 
 }

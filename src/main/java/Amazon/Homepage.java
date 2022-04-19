@@ -32,6 +32,9 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//a[@href='/music/unlimited?ref_=nav_cs_music']")
     public WebElement musicPage;
 
+    @FindBy(xpath = "//a[@href = '/Kindle-eBooks/b/?ie=UTF8&node=154606011&ref_=nav_cs_kindle_books']")
+    public WebElement kindleBooksPage;
+
 
 
     public Homepage() {
@@ -76,6 +79,11 @@ public class Homepage extends BasePage {
         clickOnElement(musicPage);
 
         return new MusicPage();
+    }
+    public KindleBooksPage navigateToKindleBooksPage() {
+        clickOnElement(kindleBooksPage);
+
+        return new KindleBooksPage();
     }
 
 }

@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/KindleBooksPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestKindleBooksPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/reports/testCustomGiftListDropdownOption.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/testCustomGiftListDropdownOption.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/RegistryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestRegistryPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reports/testAccessToGiftCardPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/testAccessToGiftCardPage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/RegistryPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +83,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WWSelenium2022" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -95,8 +103,8 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRegistryPage">
-    <configuration name="TestRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestKindleBooksPage.testKindleUnlimitedEligibleOption">
+    <configuration name="TestHomepage.testAccessToGiftCardPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -105,25 +113,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRegistryPage.testBabyRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Amazon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testBabyRegistryDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testAccessToGiftCardPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -131,7 +122,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistryPage.testBirthdayGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestKindleBooksPage.testAvgCustomerReviews" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +131,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testBirthdayGiftListDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
+      <option name="METHOD_NAME" value="testAvgCustomerReviews" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -149,7 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistryPage.testCustomGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestKindleBooksPage.testKindleBooksSearchBar" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -158,8 +149,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testCustomGiftListDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
+      <option name="METHOD_NAME" value="testKindleBooksSearchBar" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -167,7 +158,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistryPage.testHolidayGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestKindleBooksPage.testKindleUnlimitedEligibleOption" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -176,8 +167,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testHolidayGiftListDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
+      <option name="METHOD_NAME" value="testKindleUnlimitedEligibleOption" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestKindleBooksPage.testNewReleaseLast30Days" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestKindleBooksPage" />
+      <option name="METHOD_NAME" value="testNewReleaseLast30Days" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -187,11 +196,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestRegistryPage" />
-        <item itemvalue="TestNG.TestRegistryPage.testBabyRegistryDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testCustomGiftListDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testBirthdayGiftListDropdownOption" />
+        <item itemvalue="TestNG.TestKindleBooksPage.testKindleUnlimitedEligibleOption" />
+        <item itemvalue="TestNG.TestKindleBooksPage.testKindleBooksSearchBar" />
+        <item itemvalue="TestNG.TestKindleBooksPage.testNewReleaseLast30Days" />
+        <item itemvalue="TestNG.TestKindleBooksPage.testAvgCustomerReviews" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToGiftCardPage" />
       </list>
     </recent_temporary>
   </component>
