@@ -12,8 +12,8 @@ public class TestAmazonBasicsPage extends TestBasePage {
     public void testAmazonBasicsPageSearch() {
         Homepage homepage = new Homepage();
         AmazonBasicsPage amazonBasicsPage = homepage.navigateToAmazonBasicsPage();
-        String text = "pet food";
-        amazonBasicsPage.searchBar.sendKeys(text);
+        //String text = "pet food";
+        amazonBasicsPage.searchBar.sendKeys("pet food");
         amazonBasicsPage.searchBar.click();
 
         //String expectedText = "pet food";
