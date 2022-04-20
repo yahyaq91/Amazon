@@ -30,7 +30,7 @@ public class AllOptionsPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"acrCustomerReviewText\"]")
     public WebElement getRatings;
 
-    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[1]/li[20]")
+    @FindBy(xpath = "//*[@id=\"hmenu-content\"]/ul[1]/li[20]/a")
     public WebElement amazonFresh;
 
     @FindBy(xpath = "//a[@href='/b?bbn=10329849011&node=371460011&ref_=nav_em__afs_dce_0_2_12_5']")
