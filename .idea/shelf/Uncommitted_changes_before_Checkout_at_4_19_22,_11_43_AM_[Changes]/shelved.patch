@@ -1,0 +1,25 @@
+Index: src/main/java/Amazon/AmazonBasicsPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Amazon;\n\nimport base.BasePage;\n\npublic class AmazonBasicsPage extends BasePage {\n}\n
+===================================================================
+diff --git a/src/main/java/Amazon/AmazonBasicsPage.java b/src/main/java/Amazon/AmazonBasicsPage.java
+--- a/src/main/java/Amazon/AmazonBasicsPage.java	
++++ b/src/main/java/Amazon/AmazonBasicsPage.java	
+@@ -1,6 +1,15 @@
+ package Amazon;
+ 
+ import base.BasePage;
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.FindBy;
++import org.openqa.selenium.support.PageFactory;
++import org.openqa.selenium.support.ui.ExpectedConditions;
++
++
+ 
+-public class AmazonBasicsPage extends BasePage {
++    public class AmazonBasicsPage extends BasePage {
++        private static final String URL = "https://www.amazon.com/";
++        @FindBy(className = "style__navigation__FMWJE Header__navigationWithFollowButton__3F3fa Header__hasLogo__3osQs style__hasLogo__3Lfx0 style__hasFollowButton__enDxN")
++        public WebElement searchBar;
+ }
