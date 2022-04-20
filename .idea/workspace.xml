@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/AllOptionsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAllOptionsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/reports/testLearnAboutFireTv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/reports/testNavigateToCheeseInAmazonFresh.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
