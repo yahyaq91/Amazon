@@ -1,0 +1,122 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e7ac956a-3680-457c-83a8-7ee5ce57ab4d\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"27wAbXzGy7Cg2zPMXAICeYLGcYb\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/main/java\" />\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\yahya\\IdeaProjects\\Amazon\\src\\main\\java\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e7ac956a-3680-457c-83a8-7ee5ce57ab4d\" name=\"Changes\" comment=\"\" />\n      <created>1650220850340</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1650220850340</updated>\n    </task>\n    <servers />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bd6f875f385ca617f24326513b24174c4a4372af)
++++ b/.idea/workspace.xml	(date 1650468636118)
+@@ -4,7 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="" />
++    <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BasePage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -17,10 +24,16 @@
+       </list>
+     </option>
+   </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="27wAbXzGy7Cg2zPMXAICeYLGcYb" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -30,13 +43,76 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+     <property name="project.structure.last.edited" value="Modules" />
+-    <property name="project.structure.proportion" value="0.0" />
+-    <property name="project.structure.side.proportion" value="0.0" />
++    <property name="project.structure.proportion" value="0.15" />
++    <property name="project.structure.side.proportion" value="0.2" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\yahya\IdeaProjects\Amazon\src\main\java" />
+     </key>
++  </component>
++  <component name="RunManager" selected="TestNG.TestHomepage.testAccessToAmazonBasicsPage">
++    <configuration name="TestAmazonBasicsPage.testAmazonBasicsPageSearch" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Amazon" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Amazon.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Amazon" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestAmazonBasicsPage" />
++      <option name="METHOD_NAME" value="testAmazonBasicsPageSearch" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TestHomepage.testAccessToAmazonBasicsPage" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Amazon" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Amazon.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Amazon" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
++      <option name="METHOD_NAME" value="testAccessToAmazonBasicsPage" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="TestHomepage.testAccessToRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
++      <module name="Amazon" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="Amazon.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="Amazon" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
++      <option name="METHOD_NAME" value="testAccessToRegistryPage" />
++      <option name="TEST_OBJECT" value="METHOD" />
++      <properties />
++      <listeners />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="TestNG.TestHomepage.testAccessToAmazonBasicsPage" />
++        <item itemvalue="TestNG.TestAmazonBasicsPage.testAmazonBasicsPageSearch" />
++        <item itemvalue="TestNG.TestHomepage.testAccessToRegistryPage" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">

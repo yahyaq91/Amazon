@@ -1,0 +1,242 @@
+Index: src/main/java/base/BasePage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package base;\n\nimport com.relevantcodes.extentreports.ExtentReports;\nimport com.relevantcodes.extentreports.LogStatus;\nimport io.github.bonigarcia.wdm.WebDriverManager;\nimport org.openqa.selenium.*;\nimport org.openqa.selenium.chrome.ChromeDriver;\nimport org.openqa.selenium.edge.EdgeDriver;\nimport org.openqa.selenium.firefox.FirefoxDriver;\nimport org.openqa.selenium.io.FileHandler;\nimport org.openqa.selenium.safari.SafariDriver;\nimport org.openqa.selenium.support.ui.ExpectedConditions;\nimport org.openqa.selenium.support.ui.Select;\nimport org.openqa.selenium.support.ui.WebDriverWait;\nimport org.testng.ITestContext;\nimport org.testng.ITestResult;\nimport org.testng.annotations.*;\nimport reporting.ExtentManager;\nimport reporting.ExtentTestManager;\n\nimport java.io.File;\nimport java.io.FileInputStream;\nimport java.io.IOException;\nimport java.io.InputStream;\nimport java.lang.reflect.Method;\nimport java.time.Duration;\nimport java.util.Calendar;\nimport java.util.Date;\nimport java.util.Properties;\nimport java.util.Set;\n\npublic class BasePage {\n\n    public static WebDriver driver;\n    public static WebDriverWait webDriverWait;\n    public static ExtentReports extent;\n\n\n    @BeforeSuite(alwaysRun = true)\n    public void reportSetup(ITestContext context) {\n        ExtentManager.setOutputDirectory(context);\n        extent = ExtentManager.getInstance();\n    }\n\n    @BeforeMethod(alwaysRun = true)\n    public void reportInit(Method method) {\n        String className = method.getDeclaringClass().getSimpleName();\n        String methodName = method.getName();\n\n        ExtentTestManager.startTest(methodName);\n        ExtentTestManager.getTest().assignCategory(className);\n    }\n\n    @Parameters({\"browser\", \"url\"})\n    @BeforeMethod\n    public void driverSetup(@Optional(\"edge\") String browser, @Optional(\"https://www.amazon.com\") String url) throws IOException {\n        driverInit(browser);\n        driver.get(url);\n        driver.manage().deleteAllCookies();\n        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));\n        driver.manage().window().maximize();\n    }\n\n    @AfterMethod\n    public void cleanUp() {\n        driver.close();\n        driver.quit();\n    }\n\n    @AfterMethod(alwaysRun = true)\n    public void afterEachTestMethod(ITestResult result) {\n\n        ExtentTestManager.getTest().getTest().setStartedTime(getTime(result.getStartMillis()));\n        ExtentTestManager.getTest().getTest().setEndedTime(getTime(result.getEndMillis()));\n\n        for (String group : result.getMethod().getGroups()) {\n            ExtentTestManager.getTest().assignCategory(group);\n        }\n\n        if (result.getStatus() == ITestResult.FAILURE) {\n            ExtentTestManager.getTest().log(LogStatus.FAIL, \"TEST CASE FAILED: \" + result.getName());\n            ExtentTestManager.getTest().log(LogStatus.FAIL, result.getThrowable());\n            captureScreenshot(driver, result.getName());\n        } else if (result.getStatus() == ITestResult.SKIP) {\n            ExtentTestManager.getTest().log(LogStatus.SKIP, \"TEST CASE SKIPPED: \" + result.getName());\n        } else if (result.getStatus() == ITestResult.SUCCESS) {\n            ExtentTestManager.getTest().log(LogStatus.PASS, \"TEST CASE PASSED: \" + result.getName());\n        }\n\n        ExtentTestManager.endTest();\n        extent.flush();\n    }\n\n    // region Selenium API\n    public void clickOnElement(WebElement element) {\n        webDriverWait.until(ExpectedConditions.elementToBeClickable(element));\n        element.click();\n    }\n\n    public void sendKeysToElement(WebElement element, String keys) {\n        webDriverWait.until(ExpectedConditions.visibilityOf(element));\n        element.sendKeys(keys);\n    }\n\n    public void selectFromDropdownByVisibleText(WebElement element, String visibleText) {\n        Select select = new Select(element);\n        select.selectByVisibleText(visibleText);\n    }\n\n    public void selectFromDropdownByIndex(WebElement element, int index) {\n        Select select = new Select(element);\n        select.selectByIndex(index);\n    }\n\n    public void selectFromDropdownByValue(WebElement element, String value) {\n        Select select = new Select(element);\n        select.selectByValue(value);\n    }\n\n    public boolean isElementVisible(WebElement element) {\n        try {\n            webDriverWait.until(ExpectedConditions.visibilityOf(element));\n        } catch (ElementNotVisibleException elementNotVisibleException) {\n\n        }\n\n        return element.isDisplayed();\n    }\n\n    public void switchTabs() {\n        String parentHandle = driver.getWindowHandle();\n\n        Set<String> windowHandles = driver.getWindowHandles();\n\n        for (String handle : windowHandles) {\n            if (!handle.equals(parentHandle)) {\n                driver.switchTo().window(handle);\n            }\n        }\n    }\n\n    // endregion\n\n    // region Helper Methods\n    private static Properties loadProperties(File file) throws IOException {\n        Properties prop = new Properties();\n        InputStream ism = new FileInputStream(file);\n        prop.load(ism);\n        ism.close();\n        return prop;\n    }\n\n    public void driverInit(String browser) {\n        if (browser.equalsIgnoreCase(\"chrome\")) {\n            WebDriverManager.chromedriver().setup();\n            driver = new ChromeDriver();\n        } else if (browser.equalsIgnoreCase(\"firefox\")) {\n            WebDriverManager.firefoxdriver().setup();\n            driver = new FirefoxDriver();\n        } else if (browser.equalsIgnoreCase(\"safari\")) {\n            WebDriverManager.safaridriver().setup();\n            driver = new SafariDriver();\n        } else if (browser.equalsIgnoreCase(\"edge\")) {\n            WebDriverManager.edgedriver().setup();\n            driver = new EdgeDriver();\n        }\n\n        webDriverWait = new WebDriverWait(driver, Duration.ofSeconds(10));\n    }\n\n    private static void captureScreenshot(WebDriver driver, String testName) {\n        String fileName = testName + \".png\";\n        File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);\n        File newScreenshotFile = new File(System.getProperty(\"user.dir\") + File.separator + \"src\" + File.separator +\n                \"test\" + File.separator + \"reports\" + File.separator + fileName);\n\n        try {\n            FileHandler.copy(screenshot, newScreenshotFile);\n            System.out.println(\"SCREENSHOT TAKEN\");\n        } catch (Exception e) {\n            System.out.println(\"ERROR TAKING SCREENSHOT: \" + e.getMessage());\n        }\n    }\n\n    private Date getTime(long millis) {\n        Calendar calendar = Calendar.getInstance();\n        calendar.setTimeInMillis(millis);\n        return calendar.getTime();\n    }\n    // endregion\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/base/BasePage.java b/src/main/java/base/BasePage.java
+--- a/src/main/java/base/BasePage.java	
++++ b/src/main/java/base/BasePage.java	
+@@ -53,7 +53,7 @@
+ 
+     @Parameters({"browser", "url"})
+     @BeforeMethod
+-    public void driverSetup(@Optional("edge") String browser, @Optional("https://www.amazon.com") String url) throws IOException {
++    public void driverSetup(@Optional("chrome") String browser, @Optional("https://www.amazon.com") String url) throws IOException {
+         driverInit(browser);
+         driver.get(url);
+         driver.manage().deleteAllCookies();
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"e7ac956a-3680-457c-83a8-7ee5ce57ab4d\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"TestNG Test Class\" />\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <favorite-branches>\n      <branch-storage>\n        <map>\n          <entry type=\"LOCAL\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"Yahya\" />\n              </list>\n            </value>\n          </entry>\n          <entry type=\"REMOTE\">\n            <value>\n              <list>\n                <branch-info repo=\"$PROJECT_DIR$\" source=\"origin/Yahya\" />\n              </list>\n            </value>\n          </entry>\n        </map>\n      </branch-storage>\n    </favorite-branches>\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"239f88ce5a6a9e3777468928095cf0797d82270f\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitSEFilterConfiguration\">\n    <file-type-list>\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\n      <filtered-out-file-type name=\"TAG\" />\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\n    </file-type-list>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"27wAbXzGy7Cg2zPMXAICeYLGcYb\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary\" value=\"TestNG\" />\n    <property name=\"com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG\" value=\"\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../WWSelenium2022\" />\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.lookFeel\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\yahya\\IdeaProjects\\Amazon\\src\\main\\java\" />\n    </key>\n    <key name=\"CreateTestDialog.Recents.Supers\">\n      <recent name=\"\" />\n    </key>\n    <key name=\"MoveClassesOrPackagesDialog.RECENTS_KEY\">\n      <recent name=\"Amazon\" />\n    </key>\n    <key name=\"CreateTestDialog.RecentsKey\">\n      <recent name=\"Amazon\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"TestNG.TestRegistryPage.testWeddingRegistryDropdownOption\">\n    <configuration name=\"TestRegistryPage\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Amazon\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"TestRegistryPage.testBabyRegistryDropdownOption\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Amazon\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\n      <option name=\"METHOD_NAME\" value=\"testBabyRegistryDropdownOption\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"TestRegistryPage.testCustomGiftListDropdownOption\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Amazon\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\n      <option name=\"METHOD_NAME\" value=\"testCustomGiftListDropdownOption\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"TestRegistryPage.testHolidayGiftListDropdownOption\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Amazon\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\n      <option name=\"METHOD_NAME\" value=\"testHolidayGiftListDropdownOption\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"TestRegistryPage.testWeddingRegistryDropdownOption\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\n      <module name=\"Amazon\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"Amazon.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <option name=\"PACKAGE_NAME\" value=\"Amazon\" />\n      <option name=\"MAIN_CLASS_NAME\" value=\"Amazon.TestRegistryPage\" />\n      <option name=\"METHOD_NAME\" value=\"testWeddingRegistryDropdownOption\" />\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\n      <properties />\n      <listeners />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"TestNG.TestRegistryPage.testWeddingRegistryDropdownOption\" />\n        <item itemvalue=\"TestNG.TestRegistryPage.testHolidayGiftListDropdownOption\" />\n        <item itemvalue=\"TestNG.TestRegistryPage.testCustomGiftListDropdownOption\" />\n        <item itemvalue=\"TestNG.TestRegistryPage.testBabyRegistryDropdownOption\" />\n        <item itemvalue=\"TestNG.TestRegistryPage\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"e7ac956a-3680-457c-83a8-7ee5ce57ab4d\" name=\"Changes\" comment=\"\" />\n      <created>1650220850340</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1650220850340</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -6,6 +6,11 @@
+   <component name="ChangeListManager">
+     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BasePage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -15,46 +20,12 @@
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+-        <option value="TestNG Test Class" />
+         <option value="Class" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
+-    <favorite-branches>
+-      <branch-storage>
+-        <map>
+-          <entry type="LOCAL">
+-            <value>
+-              <list>
+-                <branch-info repo="$PROJECT_DIR$" source="Yahya" />
+-              </list>
+-            </value>
+-          </entry>
+-          <entry type="REMOTE">
+-            <value>
+-              <list>
+-                <branch-info repo="$PROJECT_DIR$" source="origin/Yahya" />
+-              </list>
+-            </value>
+-          </entry>
+-        </map>
+-      </branch-storage>
+-    </favorite-branches>
+-    <option name="RECENT_BRANCH_BY_REPOSITORY">
+-      <map>
+-        <entry key="$PROJECT_DIR$" value="239f88ce5a6a9e3777468928095cf0797d82270f" />
+-      </map>
+-    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="GitSEFilterConfiguration">
+-    <file-type-list>
+-      <filtered-out-file-type name="LOCAL_BRANCH" />
+-      <filtered-out-file-type name="REMOTE_BRANCH" />
+-      <filtered-out-file-type name="TAG" />
+-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+-    </file-type-list>
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -70,65 +41,18 @@
+   <component name="PropertiesComponent">
+     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WWSelenium2022" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+     <property name="project.structure.last.edited" value="Modules" />
+-    <property name="project.structure.proportion" value="0.0" />
+-    <property name="project.structure.side.proportion" value="0.0" />
+-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
++    <property name="project.structure.proportion" value="0.15" />
++    <property name="project.structure.side.proportion" value="0.2" />
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="C:\Users\yahya\IdeaProjects\Amazon\src\main\java" />
+     </key>
+-    <key name="CreateTestDialog.Recents.Supers">
+-      <recent name="" />
+-    </key>
+-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+-      <recent name="Amazon" />
+-    </key>
+-    <key name="CreateTestDialog.RecentsKey">
+-      <recent name="Amazon" />
+-    </key>
+   </component>
+-  <component name="RunManager" selected="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption">
+-    <configuration name="TestRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="Amazon" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Amazon.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Amazon" />
+-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="TEST_OBJECT" value="CLASS" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="TestRegistryPage.testBabyRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+-      <module name="Amazon" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="Amazon.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="Amazon" />
+-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="METHOD_NAME" value="testBabyRegistryDropdownOption" />
+-      <option name="TEST_OBJECT" value="METHOD" />
+-      <properties />
+-      <listeners />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="TestRegistryPage.testCustomGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="TestNG.TestHomepage.testAccessToAmazonBasicsPage">
++    <configuration name="TestAmazonBasicsPage.testAmazonBasicsPageSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Amazon" />
+       <extension name="coverage">
+         <pattern>
+@@ -137,8 +61,8 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Amazon" />
+-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="METHOD_NAME" value="testCustomGiftListDropdownOption" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestAmazonBasicsPage" />
++      <option name="METHOD_NAME" value="testAmazonBasicsPageSearch" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -146,7 +70,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestRegistryPage.testHolidayGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestHomepage.testAccessToAmazonBasicsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Amazon" />
+       <extension name="coverage">
+         <pattern>
+@@ -155,8 +79,8 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Amazon" />
+-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="METHOD_NAME" value="testHolidayGiftListDropdownOption" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
++      <option name="METHOD_NAME" value="testAccessToAmazonBasicsPage" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -164,7 +88,7 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestRegistryPage.testWeddingRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestHomepage.testAccessToRegistryPage" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Amazon" />
+       <extension name="coverage">
+         <pattern>
+@@ -173,8 +97,8 @@
+         </pattern>
+       </extension>
+       <option name="PACKAGE_NAME" value="Amazon" />
+-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
+-      <option name="METHOD_NAME" value="testWeddingRegistryDropdownOption" />
++      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
++      <option name="METHOD_NAME" value="testAccessToRegistryPage" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -184,11 +108,9 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption" />
+-        <item itemvalue="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption" />
+-        <item itemvalue="TestNG.TestRegistryPage.testCustomGiftListDropdownOption" />
+-        <item itemvalue="TestNG.TestRegistryPage.testBabyRegistryDropdownOption" />
+-        <item itemvalue="TestNG.TestRegistryPage" />
++        <item itemvalue="TestNG.TestHomepage.testAccessToAmazonBasicsPage" />
++        <item itemvalue="TestNG.TestAmazonBasicsPage.testAmazonBasicsPageSearch" />
++        <item itemvalue="TestNG.TestHomepage.testAccessToRegistryPage" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -203,15 +125,4 @@
+     </task>
+     <servers />
+   </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+ </project>
+\ No newline at end of file
