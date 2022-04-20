@@ -13,20 +13,20 @@ public class RegistryPage extends BasePage {
     @FindBy(xpath = "//select[@name='searchUrl']")
     public WebElement dropdown;
 
-//    @FindBy(xpath = "//option[@value='/wedding/search?nameOrEmail=']")
-//    public WebElement dropdownWeddingRegistry;
-//
-//    @FindBy(xpath = "//option[@value='/baby-reg/search-results?nameOrEmail=']")
-//    public WebElement dropdownBabyRegistry;
-//
-//    @FindBy(xpath = "//option[@value='/registries/birthday/search?name=']")
-//    public WebElement dropdownBirthdayGiftList;
-//
-//    @FindBy(xpath = "//option[@value='/registries/custom/search?name=']")
-//    public WebElement dropdownCustomGiftList;
-//
-//    @FindBy(xpath = "//option[@value='/registries/holiday/search?name=']")
-//    public WebElement dropdownHolidayGiftList;
+    @FindBy(xpath = "//option[@value='/wedding/search?nameOrEmail=']")
+    public WebElement dropdownWeddingRegistry;
+
+    @FindBy(xpath = "//option[@value='/baby-reg/search-results?nameOrEmail=']")
+    public WebElement dropdownBabyRegistry;
+
+    @FindBy(xpath = "//option[@value='/registries/birthday/search?name=']")
+    public WebElement dropdownBirthdayGiftList;
+
+    @FindBy(xpath = "//option[@value='/registries/custom/search?name=']")
+    public WebElement dropdownCustomGiftList;
+
+    @FindBy(xpath = "//option[@value='/registries/holiday/search?name=']")
+    public WebElement dropdownHolidayGiftList;
     // endregion
 
     @FindBy(xpath =("//button[@class='gr-btn gr-btn--rounded gr-text gr-find-stripe__cta gr-find-stripe__submit']"))
@@ -34,6 +34,9 @@ public class RegistryPage extends BasePage {
 
     @FindBy(name = "name")
     public WebElement searchBar;
+
+    @FindBy(xpath = "//a[@href = '/registries/birthday?ref_=gr-landing']")
+    public WebElement kidsBirthdays;
 
     @FindBy(xpath = "//*[@id=\"wr_search_result_record_0-owner\"]/div/a")
     public WebElement weddingRegistryFirstResult;
@@ -56,8 +59,8 @@ public class RegistryPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    public void selectDropdownOption(String visibleText) {
-        selectFromDropdownByValue(dropdown, visibleText);
+    public void selectDropdownOption(int number) {
+        selectFromDropdownByIndex(dropdown, number);
     }
 
 }

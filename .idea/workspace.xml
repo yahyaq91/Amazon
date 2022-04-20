@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/AllOptionsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAllOptionsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testLearnAboutFireTv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testNavigateToCheeseInAmazonFresh.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/AmazonBasicsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/AmazonBasicsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestAmazonBasicsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestAmazonBasicsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestRegistryPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestHomepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +24,46 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="TestNG Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Yahya" />
+              </list>
+            </value>
+          </entry>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/Yahya" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="239f88ce5a6a9e3777468928095cf0797d82270f" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,20 +77,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WWSelenium2022" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yahya\IdeaProjects\Amazon\src\main\java" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="Amazon" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Amazon" />
+    </key>
   </component>
-  <component name="RunManager">
-    <configuration name="TestAmazonBasicsPage.testAmazonBasicsPageSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestAllOptionsPage.testNavigateToCheeseInAmazonFresh">
+    <configuration name="TestAllOptionsPage.testFindDirectorInPrimeVideoPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -62,8 +112,80 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestAmazonBasicsPage" />
-      <option name="METHOD_NAME" value="testAmazonBasicsPageSearch" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testFindDirectorInPrimeVideoPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAllOptionsPage.testFireTvSupport" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testFireTvSupport" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAllOptionsPage.testLearnAboutFireTv" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testLearnAboutFireTv" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAllOptionsPage.testNavigateToCheeseInAmazonFresh" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testNavigateToCheeseInAmazonFresh" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestAllOptionsPage.testNavigateToCustomerReviewsForEchoShow5" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
+      <option name="METHOD_NAME" value="testNavigateToCustomerReviewsForEchoShow5" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -73,7 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestAmazonBasicsPage.testAmazonBasicsPageSearch" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testNavigateToCheeseInAmazonFresh" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testNavigateToCustomerReviewsForEchoShow5" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testFireTvSupport" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testLearnAboutFireTv" />
+        <item itemvalue="TestNG.TestAllOptionsPage.testFindDirectorInPrimeVideoPage" />
       </list>
     </recent_temporary>
   </component>
@@ -98,5 +224,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
