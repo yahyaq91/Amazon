@@ -45,5 +45,15 @@ public class TestHomepage extends TestBasePage {
         Homepage homepage = new Homepage();
         homepage.navigateToMusicPage();
     }
+    @Test
+    public void testAccessToKindleBooksPage(){
+        Homepage homepage = new Homepage();
+        homepage.navigateToKindleBooksPage();
+    }
+    @Test
+    public void testAccessToAllOptionPage(){
+        Homepage homepage = new Homepage();
+        homepage.selectAllOption();
+    }
 
 }
