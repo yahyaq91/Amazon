@@ -7,11 +7,14 @@
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonBasicsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/reports/testAmazonBasicsPageSearch.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/testAmazonBasicsPageSearch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/FashionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/FashionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestFashionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestFashionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/reports/testAccessToAmazonBasicsPage.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/testAccessToAmazonBasicsPage.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Amazon/AmazonBasicsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/AmazonBasicsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/FashionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/FashionPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestAmazonBasicsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestAmazonBasicsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestFashionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestFashionPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,8 +56,8 @@
       <recent name="C:\Users\yahya\IdeaProjects\Amazon\src\main\java" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="TestAmazonBasicsPage.testAmazonBasicsPageSearch" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestFashionPage.testBackpackSection">
+    <configuration name="TestFashionPage.testBackpackSection" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -63,8 +66,80 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestAmazonBasicsPage" />
-      <option name="METHOD_NAME" value="testAmazonBasicsPageSearch" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestFashionPage" />
+      <option name="METHOD_NAME" value="testBackpackSection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFashionPage.testLuggageSection" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestFashionPage" />
+      <option name="METHOD_NAME" value="testLuggageSection" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFashionPage.testMenPants" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestFashionPage" />
+      <option name="METHOD_NAME" value="testMenPants" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFashionPage.testWomenPants" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestFashionPage" />
+      <option name="METHOD_NAME" value="testWomenPants" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomepage.testAccessToFashionPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
+      <option name="METHOD_NAME" value="testAccessToFashionPage" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -74,7 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestAmazonBasicsPage.testAmazonBasicsPageSearch" />
+        <item itemvalue="TestNG.TestFashionPage.testBackpackSection" />
+        <item itemvalue="TestNG.TestFashionPage.testLuggageSection" />
+        <item itemvalue="TestNG.TestFashionPage.testWomenPants" />
+        <item itemvalue="TestNG.TestFashionPage.testMenPants" />
+        <item itemvalue="TestNG.TestHomepage.testAccessToFashionPage" />
       </list>
     </recent_temporary>
   </component>
@@ -104,9 +183,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Amazon/Homepage.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="1" />
+          <url>file://$PROJECT_DIR$/src/test/java/Amazon/TestFashionPage.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/Amazon/TestFashionPage.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
