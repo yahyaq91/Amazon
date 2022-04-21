@@ -74,7 +74,9 @@ public class TestAllOptionsPage extends TestBasePage {
         allOptionsPage.podcastSearchBar.sendKeys("Conan");
         allOptionsPage.podcastSearchButton.click();
 
-
-
+        String expectedText = "Search results for \"Conan\"";
+        String text = driver.findElement(By.xpath("//div[@class='grid-left-right-spacings']")).getText();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
     }
 }

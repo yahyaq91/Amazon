@@ -53,9 +53,10 @@ public class TestRegistryPage extends TestBasePage {
         registryPage.searchButton.click();
         registryPage.birthdayGiftListFirstResult.click();
 
-        String greetingHeader = driver.getTitle();
-        String expectedHeader = "Amazon Birthday Gift List";
-        Assert.assertEquals(greetingHeader, expectedHeader);
+        String expectedText = "Amazon Birthday Gift List";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
     }
     @Test
     public void testCustomGiftListDropdownOption() {
@@ -72,9 +73,10 @@ public class TestRegistryPage extends TestBasePage {
 //        System.out.println(text);
 //        Assert.assertEquals(expectedText, text);
 
-        String greetingHeader = driver.getTitle();
-        String expectedHeader = "Amazon Custom Gift List";
-        Assert.assertEquals(greetingHeader, expectedHeader);
+        String expectedText = "Amazon Custom Gift List";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
     }
     @Test
     public void testHolidayGiftListDropdownOption() {
@@ -91,9 +93,10 @@ public class TestRegistryPage extends TestBasePage {
 //        System.out.println(text);
 //        Assert.assertEquals(expectedText, text);
 
-        String greetingHeader = driver.getTitle();
-        String expectedHeader = "Amazon Holiday Gift List";
-        Assert.assertEquals(greetingHeader, expectedHeader);
+        String expectedText = "Amazon Holiday Gift List";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
     }
     @Test
     public void testKidsBirthdaysButton(){
