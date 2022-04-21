@@ -27,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TestNG Test Class" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -87,17 +88,22 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="GitStage.ChangesTree.GroupingKeys" value="directory&#10;module&#10;repository" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../winterweekend selenium" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+      <recent name="Amazon" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\yahya\IdeaProjects\Amazon\src\main\java" />
     </key>
@@ -111,8 +117,8 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestRegistryPage.testCustomGiftListDropdownOption">
-    <configuration name="TestRegistryPage.testBabyRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestGiftCardPage.testNavigationToThankYouCard">
+    <configuration name="TestGiftCardPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +127,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testBabyRegistryDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestGiftCardPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGiftCardPage.testNavigationToBirthdayCard" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestGiftCardPage" />
+      <option name="METHOD_NAME" value="testNavigationToBirthdayCard" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -130,7 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistryPage.testBirthdayGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGiftCardPage.testNavigationToEGiftCard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -139,8 +162,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testBirthdayGiftListDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestGiftCardPage" />
+      <option name="METHOD_NAME" value="testNavigationToEGiftCard" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -148,7 +171,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistryPage.testCustomGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGiftCardPage.testNavigationToThankYouCard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -157,8 +180,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testCustomGiftListDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestGiftCardPage" />
+      <option name="METHOD_NAME" value="testNavigationToThankYouCard" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -166,7 +189,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRegistryPage.testHolidayGiftListDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGiftCardPage.testNavigationToWeddingCard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -175,26 +198,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testHolidayGiftListDropdownOption" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestRegistryPage.testWeddingRegistryDropdownOption" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Amazon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestRegistryPage" />
-      <option name="METHOD_NAME" value="testWeddingRegistryDropdownOption" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestGiftCardPage" />
+      <option name="METHOD_NAME" value="testNavigationToWeddingCard" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -204,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestRegistryPage.testCustomGiftListDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testWeddingRegistryDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testHolidayGiftListDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testBabyRegistryDropdownOption" />
-        <item itemvalue="TestNG.TestRegistryPage.testBirthdayGiftListDropdownOption" />
+        <item itemvalue="TestNG.TestGiftCardPage.testNavigationToThankYouCard" />
+        <item itemvalue="TestNG.TestGiftCardPage.testNavigationToEGiftCard" />
+        <item itemvalue="TestNG.TestGiftCardPage" />
+        <item itemvalue="TestNG.TestGiftCardPage.testNavigationToWeddingCard" />
+        <item itemvalue="TestNG.TestGiftCardPage.testNavigationToBirthdayCard" />
       </list>
     </recent_temporary>
   </component>
@@ -222,6 +227,17 @@
       <updated>1650220850340</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
