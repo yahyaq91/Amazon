@@ -46,4 +46,35 @@ public class TestAllOptionsPage extends TestBasePage {
         System.out.println(text);
         Assert.assertEquals(expectedText, text);
     }
+    @Test
+    public void testSearchAppsViaPrice(){
+        Homepage homepage = new Homepage();
+        AllOptionsPage allOptionsPage = homepage.selectAllOption();
+        allOptionsPage.appStore.click();
+        allOptionsPage.allApps.click();
+        allOptionsPage.freeApps.click();
+        allOptionsPage.minPriceInput.sendKeys("1.99");
+        allOptionsPage.maxPriceInput.sendKeys("3.99");
+        allOptionsPage.goButton.click();
+
+        String expectedText = "RESULTS";
+        String text = driver.findElement(By.xpath("//div[@tabindex='0']")).getText();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
+    }
+    @Test
+    public void testLocateAmazonStore(){
+        Homepage homepage = new Homepage();
+        AllOptionsPage allOptionsPage = homepage.selectAllOption();
+        allOptionsPage.amazonMusic.click();
+        allOptionsPage.amazonPodcast.click();
+        allOptionsPage.listenNowButton.click();
+        switchTabs();
+        allOptionsPage.podcasts.click();
+        allOptionsPage.podcastSearchBar.sendKeys("Conan");
+        allOptionsPage.podcastSearchButton.click();
+
+
+
+    }
 }
