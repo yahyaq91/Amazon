@@ -54,8 +54,8 @@ public class RegistryPage extends BasePage {
     public WebElement holidayRegistryFirstResult;
 
 
-    public RegistryPage() {
-        webDriverWait.until(ExpectedConditions.urlContains(URL));
+         public RegistryPage() {
+            webDriverWait.until(ExpectedConditions.urlContains(URL));
         PageFactory.initElements(driver, this);
     }
 
