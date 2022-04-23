@@ -1,6 +1,7 @@
 package Amazon;
 
 import base.BasePage;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,7 +18,7 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//a[@href='/home-garden-kitchen-furniture-bedding/b/?ie=UTF8&node=1055398&ref_=nav_cs_home']")
     public WebElement amazonHomePage;
 
-    @FindBy(xpath = "//a[@href='/automotive-auto-truck-replacements-parts/b/?ie=UTF8&node=15684181&ref_=nav_cs_automotive']")
+    @FindBy(xpath = "//select[@aria-describedby='searchDropdownDescription']")
     public WebElement automotivePage;
 
     @FindBy(xpath = "//a[@href='/books-used-books-textbooks/b/?ie=UTF8&node=283155&ref_=nav_cs_books']")
@@ -32,7 +33,8 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//a[@href='/music/unlimited?ref_=nav_cs_music']")
     public WebElement musicPage;
 
-
+    @FindBy(xpath = "//a[@href='javascript: void(0)']")
+    public WebElement optionsAutoPage;
 
     public Homepage() {
         PageFactory.initElements(driver, this);
@@ -52,11 +54,8 @@ public class Homepage extends BasePage {
 
         return new AmazonHomePage();
     }
-    public AutomotivePage navigateToAutomotivePage() {
-        clickOnElement(automotivePage);
 
-        return new AutomotivePage();
-    }
+
     public BooksPage navigateToBooksPage() {
         clickOnElement(booksPage);
 
@@ -77,5 +76,14 @@ public class Homepage extends BasePage {
 
         return new MusicPage();
     }
+//    public OptionsAutoPage navigateToOptionsAutoPage() {
+//        clickOnElement(optionsAutoPage);
+//
+//        return new OptionsAutoPage ();
+//    }
+    public OptionsAutoPage navigateToOptionsAutoPage() {
+        automotivePage.click();
+        return new OptionsAutoPage();
+}
 
 }

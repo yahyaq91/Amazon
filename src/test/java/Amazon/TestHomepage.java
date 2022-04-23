@@ -21,9 +21,9 @@ public class TestHomepage extends TestBasePage {
         homepage.navigateToAmazonHomePage();
     }
     @Test
-    public void testAccessToAutomotivePage(){
+    public void testAccessToOptionsAutoPage(){
         Homepage homepage = new Homepage();
-        homepage.navigateToAutomotivePage();
+        homepage.navigateToOptionsAutoPage();
     }
     @Test
     public void testAccessToBooksPage(){
