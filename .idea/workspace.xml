@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonBasicsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AmazonHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AmazonHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/base/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/base/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAmazonHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/base/BasePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/base/BasePage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,8 +94,8 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestAmazonHomePage.testNavigateToshopByRoomSearchOption">
-    <configuration name="TestAmazonHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestAmazonHomePage.testNavigateTogardenOutdoorSearchOption">
+    <configuration name="TestAmazonHomePage.testNavigateToFurnitureSearchOption" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -109,7 +105,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
       <option name="MAIN_CLASS_NAME" value="Amazon.TestAmazonHomePage" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="testNavigateToFurnitureSearchOption" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -190,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestAmazonHomePage.testNavigateToshopByRoomSearchOption" />
         <item itemvalue="TestNG.TestAmazonHomePage.testNavigateTogardenOutdoorSearchOption" />
+        <item itemvalue="TestNG.TestAmazonHomePage.testNavigateToshopByRoomSearchOption" />
         <item itemvalue="TestNG.TestAmazonHomePage.testNavigateTokitchenDiningSearchOption" />
         <item itemvalue="TestNG.TestAmazonHomePage.testNavigateTobedbathSearchOption" />
-        <item itemvalue="TestNG.TestAmazonHomePage" />
+        <item itemvalue="TestNG.TestAmazonHomePage.testNavigateToFurnitureSearchOption" />
       </list>
     </recent_temporary>
   </component>

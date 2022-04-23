@@ -1,6 +1,8 @@
 package Amazon;
 
 import base.TestBasePage;
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestAmazonHomePage extends TestBasePage {
@@ -10,6 +12,12 @@ public class TestAmazonHomePage extends TestBasePage {
         Homepage homepage = new Homepage();
         AmazonHomePage amazonHomePage = homepage.navigateToAmazonHomePage();
         amazonHomePage.furniture.click();
+
+        String expectedText = "Furniture | Amazon.com";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
+
     }
 
     @Test
@@ -17,6 +25,11 @@ public class TestAmazonHomePage extends TestBasePage {
         Homepage homepage = new Homepage();
         AmazonHomePage amazonHomePage = homepage.navigateToAmazonHomePage();
         amazonHomePage.bedbath.click();
+
+        String expectedText = "Bedding & Bath | Amazon.com";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
     }
 
 
@@ -26,6 +39,10 @@ public class TestAmazonHomePage extends TestBasePage {
         AmazonHomePage amazonHomePage = homepage.navigateToAmazonHomePage();
         amazonHomePage.kitchenDining.click();
 
+        String expectedText = "Amazon.com: Kitchen & Dining: Home & Kitchen: Dining & Entertaining, Kitchen & Table Linens & More";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
     }
 
     @Test
@@ -34,6 +51,11 @@ public class TestAmazonHomePage extends TestBasePage {
         AmazonHomePage amazonHomePage = homepage.navigateToAmazonHomePage();
         amazonHomePage.shopByRoom.click();
 
+        String expectedText = "Shop by Room | Amazon.com";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
+
     }
 
     @Test
@@ -41,6 +63,11 @@ public class TestAmazonHomePage extends TestBasePage {
         Homepage homepage = new Homepage();
         AmazonHomePage amazonHomePage = homepage.navigateToAmazonHomePage();
         amazonHomePage.gardenOutdoor.click();
+
+        String expectedText = "Amazon.com: Patio, Lawn & Garden";
+        String text = driver.getTitle();
+        System.out.println(text);
+        Assert.assertEquals(expectedText, text);
 
     }
 
