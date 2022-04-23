@@ -5,42 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7ac956a-3680-457c-83a8-7ee5ce57ab4d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/reports/testFreeApps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/reports/testLocateAmazonStore.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_17_2022_10_46_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_17_2022_10_46_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_17_2022_10_47_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_17_2022_10_47_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_18_22,_12_01_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_18_22__12_01_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_19_22,_11_43_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_19_22,_11_43_AM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_19_22,_11_46_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_19_22__11_43_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_19_22__11_43_AM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_19_22__11_46_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_20_22,_11_29_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_20_22,_11_29_AM_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_20_22__11_29_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_4_20_22__11_29_AM__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_20_22,_11_31_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_20_22,_11_40_AM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_20_22__11_31_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_4_20_22__11_40_AM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_20_2022_2_00_PM_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_20_2022_2_00_PM__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Changes]2/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Amazon/LaptopsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestLaptopPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testClickOnHpBrand.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testClickOnPrinceRange.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testLaptopHeaderText.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testSelectFirstOption.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/reports/testSortResultBy.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/AllOptionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/AllOptionsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Amazon/TestAllOptionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Amazon/TestAllOptionsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Amazon/Homepage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/reports/test_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/reports/test_report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/AllOptionsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/AllOptionsPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestAllOptionsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestAllOptionsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Amazon/Homepage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Amazon/TestHomepage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +55,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="239f88ce5a6a9e3777468928095cf0797d82270f" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,10 +85,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.TestNG" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WWSelenium2022" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
@@ -128,8 +105,8 @@
       <recent name="Amazon" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestAllOptionsPage.testLocateAmazonStore">
-    <configuration name="TestAllOptionsPage.testFreeApps" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestLaptopPage">
+    <configuration name="TestLaptopPage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -138,8 +115,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
-      <option name="METHOD_NAME" value="testFreeApps" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestLaptopPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestLaptopPage.testClickOnHpBrand" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Amazon" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Amazon.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Amazon" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestLaptopPage" />
+      <option name="METHOD_NAME" value="testClickOnHpBrand" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -147,7 +141,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAllOptionsPage.testLocateAmazonStore" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLaptopPage.testClickOnPrinceRange" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -156,8 +150,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
-      <option name="METHOD_NAME" value="testLocateAmazonStore" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestLaptopPage" />
+      <option name="METHOD_NAME" value="testClickOnPrinceRange" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -165,7 +159,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAllOptionsPage.testNavigateToCheeseInAmazonFresh" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLaptopPage.testSelectFirstOption" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -174,8 +168,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
-      <option name="METHOD_NAME" value="testNavigateToCheeseInAmazonFresh" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestLaptopPage" />
+      <option name="METHOD_NAME" value="testSelectFirstOption" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -183,7 +177,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAllOptionsPage.testNavigateToCustomerReviewsForEchoShow5" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestLaptopPage.testSortResultBy" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Amazon" />
       <extension name="coverage">
         <pattern>
@@ -192,26 +186,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestAllOptionsPage" />
-      <option name="METHOD_NAME" value="testNavigateToCustomerReviewsForEchoShow5" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHomepage.testAccessToAmazonBasicsPage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Amazon" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Amazon.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Amazon" />
-      <option name="MAIN_CLASS_NAME" value="Amazon.TestHomepage" />
-      <option name="METHOD_NAME" value="testAccessToAmazonBasicsPage" />
+      <option name="MAIN_CLASS_NAME" value="Amazon.TestLaptopPage" />
+      <option name="METHOD_NAME" value="testSortResultBy" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -221,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestAllOptionsPage.testLocateAmazonStore" />
-        <item itemvalue="TestNG.TestAllOptionsPage.testFreeApps" />
-        <item itemvalue="TestNG.TestAllOptionsPage.testNavigateToCheeseInAmazonFresh" />
-        <item itemvalue="TestNG.TestHomepage.testAccessToAmazonBasicsPage" />
-        <item itemvalue="TestNG.TestAllOptionsPage.testNavigateToCustomerReviewsForEchoShow5" />
+        <item itemvalue="TestNG.TestLaptopPage" />
+        <item itemvalue="TestNG.TestLaptopPage.testSelectFirstOption" />
+        <item itemvalue="TestNG.TestLaptopPage.testClickOnPrinceRange" />
+        <item itemvalue="TestNG.TestLaptopPage.testSortResultBy" />
+        <item itemvalue="TestNG.TestLaptopPage.testClickOnHpBrand" />
       </list>
     </recent_temporary>
   </component>

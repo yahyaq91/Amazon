@@ -1,9 +1,11 @@
 package Amazon;
 
 import base.BasePage;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class Homepage extends BasePage {
 
@@ -38,11 +40,56 @@ public class Homepage extends BasePage {
     @FindBy(xpath = "//a[@href='javascript: void(0)']")
     public WebElement allOptionPage;
 
+    //Entering on search bar
+    @FindBy(id = "twotabsearchtextbox")
+    public WebElement searchBar;
 
+    //Clicking on submit button
+    @FindBy(id= "nav-search-submit-button")
+    public WebElement searchButton;
+
+    //Clicking on HP Brand
+    @FindBy(xpath = "//li[@id='p_89/HP']//i[@class='a-icon a-icon-checkbox']")
+    public WebElement clickOnHpBrand;
+
+    //Click on Price Range
+    @FindBy(xpath = "//li[@id='p_36/1253507011']//span[text()='$200 & Above']")
+    public WebElement clickOnPriceRange;
+
+    //Sort By
+    @FindBy(xpath = "//span[@aria-label='Sort by:']")
+    public WebElement clickOnSortBy;
+
+    //Select Sort By
+    @FindBy(xpath = "//a[text()='Price: High to Low']")
+    public WebElement selectSortBy;
+
+    //Select first Result
+    @FindBy(xpath = "//span[@class='a-size-medium a-color-base a-text-normal']")
+    public WebElement firstResult;
+
+
+    //*******************************************************************************
 
     public Homepage() {
         PageFactory.initElements(driver, this);
     }
+
+    public void typeOnSearchBar(String text) {
+        searchBar.sendKeys(text);
+    }
+
+    public void clickSearchButton() {
+        searchButton.click();
+    }
+
+    public LaptopsPage doSearch(String searchTerm) {
+        typeOnSearchBar(searchTerm);
+        clickSearchButton();
+
+        return new LaptopsPage();
+    }
+
     public RegistryPage navigateToRegistryPage() {
         clickOnElement(registryPage);
 
@@ -92,6 +139,31 @@ public class Homepage extends BasePage {
         clickOnElement(allOptionPage);
 
         return new AllOptionsPage();
+    }
+
+    public LaptopsPage clickOnHpBrand() {
+       clickOnElement(clickOnHpBrand);
+
+       return new LaptopsPage();
+    }
+
+    public LaptopsPage clickOnPriceRange() {
+        clickOnElement(clickOnPriceRange);
+
+        return new LaptopsPage();
+    }
+
+    public LaptopsPage sortResultBy() {
+        clickOnElement(clickOnSortBy);
+        clickOnElement(selectSortBy);
+
+        return new LaptopsPage();
+    }
+
+    public LaptopsPage selectFirstOption() {
+        clickOnElement(firstResult);
+
+        return new LaptopsPage();
     }
 
 }
